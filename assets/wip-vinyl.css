@@ -37,11 +37,23 @@
   letter-spacing: .18em;
 }
 
-.wip-player { min-width: 0; }
+.wip-player {
+  width: 100%;
+  max-width: 32.6rem;
+  min-width: 0;
+  box-sizing: border-box;
+  justify-self: center;
+  padding: clamp(.65rem, 1.8vw, 1.05rem);
+  border: 1px solid rgba(255, 189, 62, .5);
+  border-radius: .8rem;
+  background: #0a0b0d;
+  box-shadow: inset 0 0 0 4px rgba(255, 240, 189, .06), 0 1rem 2rem rgba(0, 0, 0, .28);
+}
 
 .turntable {
   position: relative;
   width: min(100%, 31rem);
+  box-sizing: border-box;
   aspect-ratio: 1.2;
   margin-inline: auto;
   border: 2px solid rgba(255, 240, 189, .72);
@@ -65,9 +77,10 @@
     radial-gradient(circle, #242528 0 11%, #090a0b 12% 66%, #1d1e20 67% 68%, #08090a 69% 100%);
   box-shadow: 0 0 0 2px #2c2e31, 0 1.1rem 2rem rgba(0, 0, 0, .62);
   transform: translateZ(0);
+  transform-origin: 50% 50%;
 }
 
-.vinyl.is-spinning { animation: vinyl-spin 1.8s linear infinite; }
+.vinyl.is-spinning { will-change: transform; }
 
 .vinyl-label {
   position: absolute;
@@ -101,15 +114,15 @@
   right: 5%;
   top: 20%;
   z-index: 4;
-  width: 46%;
+  width: 34%;
   height: 1rem;
-  transform: rotate(-43deg);
-  transform-origin: 88% 50%;
+  transform: rotate(-90deg);
+  transform-origin: 90% 50%;
   transition: transform 1.55s cubic-bezier(.36, .08, .2, 1);
 }
 
 .tonearm.is-lowering,
-.tonearm.is-playing { transform: rotate(-12deg); }
+.tonearm.is-playing { transform: rotate(-55deg); }
 
 .tonearm-shaft {
   position: absolute;
@@ -235,8 +248,6 @@
   border: 0 !important;
 }
 
-@keyframes vinyl-spin { to { transform: rotate(360deg); } }
-
 @keyframes player-glow {
   0%, 100% { opacity: .72; box-shadow: 0 0 .45rem rgba(99, 230, 223, .55), inset 0 0 .7rem rgba(99, 230, 223, .12); }
   50% { opacity: 1; box-shadow: 0 0 1.1rem rgba(99, 230, 223, .95), inset 0 0 1.2rem rgba(99, 230, 223, .24); }
@@ -244,20 +255,21 @@
 
 @media (max-width: 850px) {
   .wip-shell { grid-template-columns: 1fr; text-align: center; }
-  .turntable { width: min(88vw, 31rem); }
+  .wip-player { width: min(96%, 31rem); }
+  .turntable { width: 100%; }
   .wip-copy h1,
   .wip-copy .lead { margin-inline: auto; }
 }
 
 @media (max-width: 520px) {
   .wip-shell { padding: 1rem; }
+  .wip-player { width: calc(100% - 1rem); }
   .turntable { width: 100%; }
   .player-button { right: 6%; bottom: 9%; width: 3.7rem; }
   .player-status { right: 29%; font-size: .64rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .vinyl.is-spinning { animation: none; }
   .tonearm { transition-duration: .01ms; }
   .player-button { animation: none; }
 }
