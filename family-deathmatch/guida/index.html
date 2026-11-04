@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guida del giocatore di Family Deathmatch.">
+  <meta name="description" content="Guida rapida a Family Deathmatch: schermate, combattenti, arene, torneo, comandi e multiplayer.">
   <title>Family Deathmatch — Guida del giocatore</title>
   <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/wip-vinyl.css">
-  <script src="../../assets/wip-vinyl.js" defer></script>
 </head>
-<body class="guide-wip-page">
+<body class="guide-page">
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <nav class="nav" aria-label="Navigazione principale">
@@ -23,34 +21,168 @@
       </div>
     </nav>
   </header>
+
   <main id="contenuto" class="page">
-    <section class="guide-wip-layout" aria-labelledby="titolo-guida-fdm">
-      <header class="page-header">
-        <p class="eyebrow">Guida del giocatore</p>
-        <h1 id="titolo-guida-fdm">Family Deathmatch</h1>
-        <div class="notice"><strong>Work in progress</strong><br>La guida completa del giocatore sarà disponibile prossimamente.</div>
-      </header>
-      <div class="wip-player guide-vinyl-player" data-wip-player>
-        <div class="turntable">
-          <div class="vinyl" data-vinyl aria-hidden="true">
-            <img class="vinyl-label" src="../../assets/fzo-vinyl-label-640.jpg" alt="">
-            <span class="spindle-hub"></span>
+    <header class="page-header guide-heading">
+      <p class="eyebrow">Guida rapida del giocatore</p>
+      <h1>Family Deathmatch</h1>
+      <p class="lead">Crea i tuoi combattenti e le tue arene, affronta incontri singoli o tornei e gioca con un secondo dispositivo vicino.</p>
+      <p class="guide-version">Guida riferita a Family Deathmatch 0.15.19.</p>
+    </header>
+
+    <div class="guide-layout">
+      <nav class="guide-nav" aria-label="Indice della guida">
+        <strong>In questa pagina</strong>
+        <a href="#mappa">Mappa dell’app</a>
+        <a href="#home">Home</a>
+        <a href="#incontro">Incontro singolo</a>
+        <a href="#creazione">Combattenti e arene</a>
+        <a href="#torneo">Torneo e statistiche</a>
+        <a href="#multiplayer">Multiplayer</a>
+        <a href="#arena">Comandi nell’arena</a>
+      </nav>
+
+      <article class="guide-content">
+        <section id="mappa">
+          <h2>Mappa dell’app</h2>
+          <p>Da Home si raggiungono tutte le funzioni principali. Le frecce mostrano il percorso più comune.</p>
+          <div class="app-flow" role="img" aria-label="Diagramma di flusso: dalla Home si accede a incontro singolo, torneo, combattenti, arene, multiplayer, backup e impostazioni.">
+            <div class="flow-home">HOME</div>
+            <div class="flow-down" aria-hidden="true">↓</div>
+            <div class="flow-branches">
+              <div class="flow-branch"><strong>Nuovo incontro</strong><span>Lobby → Arena → Risultato</span></div>
+              <div class="flow-branch"><strong>Torneo Premium</strong><span>Formato → Tabellone → Lobby → Arena → Turno successivo</span></div>
+              <div class="flow-branch"><strong>Combattenti</strong><span>Crea / Gestisci → Condividi / Importa → Statistiche</span></div>
+              <div class="flow-branch"><strong>Arene</strong><span>Crea / Gestisci → Condividi / Importa</span></div>
+              <div class="flow-branch"><strong>Due giocatori</strong><span>Ricerca → Sala d’attesa → Arena nativa o compatibile</span></div>
+              <div class="flow-branch"><strong>Backup e Impostazioni</strong><span>Salvataggio / Ripristino → Audio, difficoltà, suggerimenti e Premium</span></div>
+            </div>
           </div>
-          <div class="tonearm" data-tonearm aria-hidden="true">
-            <span class="tonearm-head"></span>
-            <span class="tonearm-shaft"></span>
-            <span class="tonearm-pivot"></span>
+        </section>
+
+        <section id="home">
+          <h2>Home</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/home.jpg" width="720" height="1444" loading="lazy" decoding="async" alt="Schermata Home di Family Deathmatch con le funzioni principali dell'app">
+            <figcaption>La Home raccoglie tutte le modalità e le funzioni principali.</figcaption>
+          </figure>
+
+          <div class="guide-table-wrap">
+            <table class="guide-table">
+              <thead><tr><th>Pulsante</th><th>Funzione</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Logo FZO</strong></td><td>Apre le anteprime di Tournament Premium e Family Deathmatch RR.</td></tr>
+                <tr><td><strong>🔊 / 🔇</strong></td><td>Disattiva o riattiva i suoni dell’app. Il comando è disponibile anche nelle lobby e nell’arena.</td></tr>
+                <tr><td><strong>Nuovo Incontro</strong></td><td>Prepara un incontro singolo con due combattenti della raccolta.</td></tr>
+                <tr><td><strong>Torneo</strong></td><td>Apre la modalità Premium con tabelloni da 4, 8 o 16 partecipanti.</td></tr>
+                <tr><td><strong>Combattenti</strong></td><td>Crea, modifica, importa e condivide combattenti; mostra statistiche e storico.</td></tr>
+                <tr><td><strong>Arene</strong></td><td>Crea, modifica, importa e condivide arene personalizzate.</td></tr>
+                <tr><td><strong>Due giocatori</strong></td><td>Cerca incontri e tornei disponibili su dispositivi vicini.</td></tr>
+                <tr><td><strong>Backup e ripristino</strong></td><td>Salva o ripristina raccolta, storico e tornei in un archivio esterno.</td></tr>
+                <tr><td><strong>Impostazioni</strong></td><td>Gestisce Premium, backup automatico, difficoltà, suggerimenti, termini e crediti.</td></tr>
+              </tbody>
+            </table>
           </div>
-          <button class="player-button" type="button" data-player-button aria-pressed="false">
-            <span data-player-icon aria-hidden="true">▶</span>
-            <span class="visually-hidden" data-player-text>Avvia disco e musica</span>
-          </button>
-          <p class="player-status" data-player-status aria-live="polite">Pronto · premi ▶ per avviare</p>
-          <audio data-player-audio preload="metadata" src="../../assets/fzo-beta-testers-loop.mp3"></audio>
-        </div>
-      </div>
-    </section>
+        </section>
+
+        <section id="incontro">
+          <h2>Lobby dell’incontro singolo</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/lobby-incontro.jpg" width="720" height="1438" loading="lazy" decoding="async" alt="Lobby di un incontro singolo con scelta dei combattenti, dell'arena e della modalità spettatore">
+            <figcaption>La lobby permette di scegliere combattenti, controllo e arena prima dell’incontro.</figcaption>
+          </figure>
+          <ul>
+            <li><strong>Cambia</strong> sostituisce uno dei due combattenti.</li>
+            <li><strong>Scegli 1</strong> o <strong>Scegli 2</strong> assegna al giocatore quel combattente; l’altro è controllato dal gioco.</li>
+            <li><strong>Spettatore</strong> avvia un incontro controllato interamente dal gioco.</li>
+            <li><strong>Scegli Arena</strong> seleziona un’arena preinstallata o personale. Senza scelta, l’arena viene sorteggiata.</li>
+            <li><strong>Aggiungi giocatore remoto</strong> trasforma la partita in un incontro multiplayer e apre la sala d’attesa dell’organizzatore.</li>
+          </ul>
+        </section>
+
+        <section id="creazione">
+          <h2>Creare, condividere e importare</h2>
+          <h3>Combattenti</h3>
+          <ol>
+            <li>Apri <strong>Combattenti → Nuovo combattente</strong> e scegli una fotografia.</li>
+            <li>L’app individua localmente i volti: tocca quello da usare.</li>
+            <li>Imposta nome, orientamento, eventuale ribaltamento, forza e fino a due fotografie alternative, quindi salva.</li>
+            <li>In <strong>I miei combattenti</strong> puoi modificare, eliminare o condividere il combattente come archivio <code>.fdmcombattente</code>.</li>
+            <li>Il destinatario usa <strong>Importa combattente</strong> per aggiungerlo alla propria raccolta.</li>
+          </ol>
+
+          <h3>Arene</h3>
+          <ol>
+            <li>Apri <strong>Arene → Nuova Arena</strong> e scegli un’immagine.</li>
+            <li>Sposta il riquadro sull’area da usare, assegna un nome e abilita <strong>Pavimento</strong> solo se i personaggi sembrano sospesi.</li>
+            <li>In <strong>Le mie arene</strong> puoi modificare, eliminare o condividere l’arena come archivio <code>.fdmarena</code>.</li>
+            <li>Il destinatario usa <strong>Importa arena</strong> per conservarla nella propria raccolta.</li>
+          </ol>
+          <p class="guide-note">La condivisione usa il normale menu Android. FZO non riceve né conserva immagini, combattenti o arene.</p>
+        </section>
+
+        <section id="torneo">
+          <h2>Torneo e statistiche</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/lobby-torneo.jpg" width="720" height="1441" loading="lazy" decoding="async" alt="Lobby di un torneo Family Deathmatch con due semifinali e i comandi di gestione del torneo">
+            <figcaption>La lobby del torneo mostra gli abbinamenti e i comandi di gestione del tabellone.</figcaption>
+          </figure>
+          <ul>
+            <li>La modalità <strong>Torneo</strong> richiede Premium sul dispositivo organizzatore e offre tabelloni da 4, 8 o 16 combattenti.</li>
+            <li>Tocca un partecipante o usa <strong>Cambia</strong> per sostituirlo. I doppioni sono consentiti; <strong>Nuovo sorteggio</strong> ricrea il tabellone.</li>
+            <li><strong>Inizia torneo</strong> apre il tabellone. Prima di ogni incontro scegli il combattente da controllare oppure la modalità spettatore e l’arena.</li>
+            <li><strong>Salva torneo</strong> permette di riprendere in seguito; <strong>Carica torneo</strong> apre i salvataggi; <strong>Albo d’oro</strong> raccoglie i vincitori.</li>
+            <li>Un giocatore remoto può essere aggiunto prima del primo incontro.</li>
+          </ul>
+          <p>Le statistiche registrano partite, vittorie, sconfitte, serie, ultimo risultato e avversario. Il bilancio dei risultati può modificare la forza effettiva e l’energia iniziale; lo storico indica anche modalità, arena e data dell’incontro.</p>
+        </section>
+
+        <section id="multiplayer">
+          <h2>Multiplayer tra dispositivi vicini</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/lobby-multiplayer-host.jpg" width="720" height="1435" loading="lazy" decoding="async" alt="Sala d'attesa multiplayer dell'organizzatore in attesa del collegamento dell'avversario">
+            <figcaption>La sala d’attesa dell’organizzatore prepara combattenti, arena e ruoli prima del collegamento.</figcaption>
+          </figure>
+          <p>Apri <strong>Due giocatori</strong> e avvia <strong>Cerca incontro/torneo</strong>. I telefoni devono essere vicini: non serve una connessione Internet, ma Android può richiedere autorizzazioni per dispositivi nelle vicinanze, Bluetooth, Wi‑Fi o posizione.</p>
+
+          <h3>FDM ↔ FDM</h3>
+          <ul>
+            <li>L’organizzatore crea la sessione da <strong>Aggiungi giocatore remoto</strong>; l’altro dispositivo la trova da <strong>Due giocatori</strong>.</li>
+            <li>Ogni partecipante sceglie il proprio combattente e può giocare o guardare come spettatore. L’organizzatore sceglie l’arena.</li>
+            <li>Quando combattenti, arena e versioni sono compatibili, entrambi confermano <strong>PRONTO</strong>.</li>
+            <li>Il dispositivo organizzatore è sempre l’autorità: calcola gioco, energia, collisioni, armi e risultato; l’ospite applica lo stato ricevuto.</li>
+          </ul>
+
+          <h3>FDM Premium → FDM Free</h3>
+          <p>Un dispositivo Premium può organizzare un torneo e invitare un dispositivo Free. L’ospite Free sceglie un proprio combattente, viene inserito nel tabellone e gioca i propri incontri o segue gli altri come spettatore. Non deve acquistare Premium.</p>
+
+          <h3>Family Deathmatch RR → FDM</h3>
+          <p>FDM può collegarsi a una sessione compatibile organizzata da Family Deathmatch RR. Riceve temporaneamente combattenti, arena e stato dell’incontro; la simulazione resta sempre autorevole sul dispositivo FDM-RR. Se la sessione assegna controlli compatibili, FDM mostra movimento, attacco, raccolta e le azioni TAG/Rissa Reale previste; altrimenti funziona come replica spettatore.</p>
+          <p class="guide-note">I contenuti ricevuti nel multiplayer sono usati per la sessione e non vengono importati automaticamente nella raccolta personale.</p>
+        </section>
+
+        <section id="arena">
+          <h2>Comandi nell’arena</h2>
+          <figure class="guide-figure landscape">
+            <img src="images/arena.jpg" width="1200" height="540" loading="lazy" decoding="async" alt="Arena di Family Deathmatch con due combattenti, barre energia e comandi di movimento e attacco">
+            <figcaption>Nell’arena sono sempre visibili energia, movimento, attacco, raccolta, pausa e registrazione.</figcaption>
+          </figure>
+          <div class="control-grid">
+            <div><strong>◀ / ▶</strong><span>Tieni premuto per muoverti a sinistra o a destra.</span></div>
+            <div><strong>💥</strong><span>Attacca; se il combattente impugna un’arma, usa l’attacco associato.</span></div>
+            <div><strong>✊</strong><span>Raccoglie un’arma quando il combattente è posizionato sopra di essa.</span></div>
+            <div><strong>PAUSA</strong><span>Ferma l’incontro. In pausa compare <strong>ESCI</strong>; <strong>RIPRENDI</strong> riavvia il gioco.</span></div>
+            <div><strong>REC</strong><span>Su Android 10 o successivo, richiede le autorizzazioni Android e registra schermo e audio del dispositivo.</span></div>
+            <div><strong>🔊 / 🔇</strong><span>Disattiva o riattiva immediatamente i suoni.</span></div>
+          </div>
+          <p>Al termine dell’incontro, <strong>RIPETI</strong> avvia una rivincita; nel torneo diventa <strong>AVANTI</strong> e riporta al tabellone. Dopo la registrazione puoi salvare il video in <strong>Filmati/Family Deathmatch</strong>, condividerlo oppure eliminarlo.</p>
+        </section>
+      </article>
+    </div>
   </main>
-  <footer class="site-footer"><p><strong>FZO</strong> — <a href="../../privacy/">Privacy Policy</a></p></footer>
+
+  <footer class="site-footer">
+    <p><strong>FZO</strong> — Family Deathmatch 0.15.19 — <a href="../../privacy/">Privacy Policy</a></p>
+  </footer>
 </body>
 </html>
