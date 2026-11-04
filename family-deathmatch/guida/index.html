@@ -6,8 +6,10 @@
   <meta name="description" content="Guida del giocatore di Family Deathmatch.">
   <title>Family Deathmatch — Guida del giocatore</title>
   <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/wip-vinyl.css">
+  <script src="../../assets/wip-vinyl.js" defer></script>
 </head>
-<body>
+<body class="guide-wip-page">
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <nav class="nav" aria-label="Navigazione principale">
@@ -17,15 +19,37 @@
         <a href="./" aria-current="page">Guida FDM</a>
         <a href="../../family-deathmatch-rissa-reale/guida/">Guida Rissa Reale</a>
         <a href="../../privacy/">Privacy</a>
+        <a href="../../beta-testers/">βeta Testers</a>
       </div>
     </nav>
   </header>
   <main id="contenuto" class="page">
-    <header class="page-header">
-      <p class="eyebrow">Guida del giocatore</p>
-      <h1>Family Deathmatch</h1>
-      <div class="notice"><strong>Work in progress</strong><br>La guida completa del giocatore sarà disponibile prossimamente.</div>
-    </header>
+    <section class="guide-wip-layout" aria-labelledby="titolo-guida-fdm">
+      <header class="page-header">
+        <p class="eyebrow">Guida del giocatore</p>
+        <h1 id="titolo-guida-fdm">Family Deathmatch</h1>
+        <div class="notice"><strong>Work in progress</strong><br>La guida completa del giocatore sarà disponibile prossimamente.</div>
+      </header>
+      <div class="wip-player guide-vinyl-player" data-wip-player>
+        <div class="turntable">
+          <div class="vinyl" data-vinyl aria-hidden="true">
+            <img class="vinyl-label" src="../../assets/fzo-vinyl-label-640.jpg" alt="">
+            <span class="spindle-hub"></span>
+          </div>
+          <div class="tonearm" data-tonearm aria-hidden="true">
+            <span class="tonearm-head"></span>
+            <span class="tonearm-shaft"></span>
+            <span class="tonearm-pivot"></span>
+          </div>
+          <button class="player-button" type="button" data-player-button aria-pressed="false">
+            <span data-player-icon aria-hidden="true">▶</span>
+            <span class="visually-hidden" data-player-text>Avvia disco e musica</span>
+          </button>
+          <p class="player-status" data-player-status aria-live="polite">Pronto · premi ▶ per avviare</p>
+          <audio data-player-audio preload="metadata" src="../../assets/fzo-beta-testers-loop.mp3"></audio>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer"><p><strong>FZO</strong> — <a href="../../privacy/">Privacy Policy</a></p></footer>
 </body>
