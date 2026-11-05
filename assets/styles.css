@@ -229,6 +229,24 @@ h3 { font-size: 1.35rem; }
   box-shadow: 0 0 3rem rgba(103,183,255,.45);
 }
 
+.portal-logo-panel {
+  display: grid;
+  width: min(100%, 29rem);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  place-items: center;
+  border: 2px solid rgba(255, 240, 189, .7);
+  border-radius: .45rem;
+  background: radial-gradient(circle, rgba(255, 189, 62, .15), rgba(7, 19, 20, .42) 58%, rgba(9, 10, 13, .95));
+  box-shadow: inset 0 0 0 5px #08090b, 0 0 2.5rem rgba(255, 189, 62, .12);
+}
+.portal-logo-panel img {
+  display: block;
+  width: min(72%, 20rem);
+  height: auto;
+  filter: drop-shadow(0 0 1.2rem rgba(255, 189, 62, .35));
+}
+
 .section { padding-block: clamp(3rem, 7vw, 6rem); }
 .section {
   margin-block: 2.2rem;
@@ -258,6 +276,8 @@ h3 { font-size: 1.35rem; }
 .card .button { margin-top: auto; align-self: flex-start; }
 .card.red { border-top: 4px solid var(--red); }
 .card.blue { border-top: 4px solid var(--blue); }
+.future-card { border-style: dashed; }
+.future-label { margin-top: auto; color: var(--gold); font-size: .86rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
 
 .legal-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .legal-link { padding: 1.5rem; border: 1px solid var(--blue); border-radius: .2rem; background: #071314; text-decoration: none; box-shadow: 5px 5px 0 rgba(99, 230, 223, .18); }
