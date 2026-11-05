@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guida del giocatore di Family Deathmatch Rissa Reale.">
-  <title>Family Deathmatch Rissa Reale — Guida del giocatore</title>
+  <meta name="description" content="Guida rapida a Family Deathmatch RR: modalità TAG e Rissa Reale, cambi, Second Wind, combattenti, arene e multiplayer.">
+  <title>Family Deathmatch RR — Guida del giocatore</title>
   <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/wip-vinyl.css">
-  <script src="../../assets/wip-vinyl.js" defer></script>
 </head>
-<body class="guide-wip-page">
+<body class="guide-page">
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <nav class="nav" aria-label="Navigazione principale">
@@ -21,34 +19,204 @@
       </div>
     </nav>
   </header>
+
   <main id="contenuto" class="page">
-    <section class="guide-wip-layout" aria-labelledby="titolo-guida-rr">
-      <header class="page-header">
-        <p class="eyebrow">Guida del giocatore</p>
-        <h1 id="titolo-guida-rr">Family Deathmatch Rissa Reale</h1>
-        <div class="notice"><strong>Work in progress</strong><br>La guida completa del giocatore sarà disponibile prossimamente.</div>
-      </header>
-      <div class="wip-player guide-vinyl-player" data-wip-player>
-        <div class="turntable">
-          <div class="vinyl" data-vinyl aria-hidden="true">
-            <img class="vinyl-label" src="../../assets/fzo-vinyl-label-640.jpg" alt="">
-            <span class="spindle-hub"></span>
+    <header class="page-header guide-heading">
+      <p class="eyebrow">Guida rapida del giocatore</p>
+      <h1>Family Deathmatch RR</h1>
+      <p class="lead">Forma due squadre, alterna i compagni nella modalità TAG o porta tutti e quattro i combattenti nell’arena con la modalità Rissa Reale.</p>
+      <p class="guide-version">Guida riferita a Family Deathmatch RR 0.10.1.</p>
+      <aside class="guide-disclaimer" aria-labelledby="fighter-image-note">
+        <p class="guide-disclaimer-title" id="fighter-image-note">Nota sulle immagini dei combattenti</p>
+        <p>I nomi, le sembianze e le immagini dei combattenti preinstallati rappresentano personaggi di fantasia. Le relative immagini sono state create mediante strumenti di intelligenza artificiale generativa e successivamente selezionate o adattate per l’impiego nel gioco.</p>
+        <p>Non intendono raffigurare persone reali; eventuali coincidenze di nomi o somiglianze sono involontarie e casuali.</p>
+      </aside>
+    </header>
+
+    <div class="guide-layout">
+      <nav class="guide-nav" aria-label="Indice della guida">
+        <strong>In questa pagina</strong>
+        <a href="#mappa">Mappa dell’app</a>
+        <a href="#home">Home</a>
+        <a href="#lobby">Preparare l’incontro</a>
+        <a href="#tag">Modalità TAG</a>
+        <a href="#rr">Rissa Reale e Second Wind</a>
+        <a href="#creazione">Combattenti e arene</a>
+        <a href="#multiplayer">Multiplayer</a>
+        <a href="#arena">Comandi nell’arena</a>
+      </nav>
+
+      <article class="guide-content">
+        <section id="mappa">
+          <h2>Mappa dell’app</h2>
+          <p>Da Home si raggiungono le due modalità di incontro e tutte le funzioni condivise con Family Deathmatch.</p>
+          <div class="app-flow" role="img" aria-label="Diagramma di flusso: dalla Home si accede alle modalità TAG e RR, a combattenti, arene, multiplayer, importazione, backup e impostazioni.">
+            <div class="flow-home">HOME</div>
+            <div class="flow-down" aria-hidden="true">↓</div>
+            <div class="flow-branches">
+              <div class="flow-branch"><strong>TAG</strong><span>Lobby a squadre → TAG → possibile fase Rissa Reale → Risultato</span></div>
+              <div class="flow-branch"><strong>RR</strong><span>Lobby a squadre → quattro combattenti insieme → Risultato</span></div>
+              <div class="flow-branch"><strong>Combattenti</strong><span>Crea / Gestisci → Condividi / Importa → Statistiche</span></div>
+              <div class="flow-branch"><strong>Arene</strong><span>Crea / Gestisci → Condividi / Importa</span></div>
+              <div class="flow-branch"><strong>Due giocatori</strong><span>Ricerca → Sala d’attesa → Arena nativa o compatibile</span></div>
+              <div class="flow-branch"><strong>Importazione, backup e impostazioni</strong><span>Asset FDM → Salvataggio / Ripristino → Audio, difficoltà e suggerimenti</span></div>
+            </div>
           </div>
-          <div class="tonearm" data-tonearm aria-hidden="true">
-            <span class="tonearm-head"></span>
-            <span class="tonearm-shaft"></span>
-            <span class="tonearm-pivot"></span>
+        </section>
+
+        <section id="home">
+          <h2>Home</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/home.jpg" width="720" height="1437" loading="lazy" decoding="async" alt="Schermata Home di Family Deathmatch RR con le modalità TAG e Rissa Reale e le funzioni principali dell'app">
+            <figcaption>Dalla Home si raggiungono le modalità TAG e Rissa Reale e tutte le funzioni principali.</figcaption>
+          </figure>
+
+          <div class="guide-table-wrap">
+            <table class="guide-table">
+              <thead><tr><th>Pulsante</th><th>Funzione</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Logo FZO</strong></td><td>Apre l’anteprima di Tournament Premium e le informazioni sulle altre app FZO.</td></tr>
+                <tr><td><strong>🔊 / 🔇</strong></td><td>Disattiva o riattiva i suoni. Il comando è disponibile anche nelle lobby e nell’arena.</td></tr>
+                <tr><td><strong>TAG</strong></td><td>Prepara una sfida tra due squadre: un combattente attivo e una riserva per squadra.</td></tr>
+                <tr><td><strong>RR</strong></td><td>Avvia un incontro Rissa Reale con tutti e quattro i combattenti presenti contemporaneamente.</td></tr>
+                <tr><td><strong>Combattenti</strong></td><td>Crea, modifica, importa e condivide combattenti; mostra statistiche e storico.</td></tr>
+                <tr><td><strong>Arene</strong></td><td>Crea, modifica, importa e condivide arene personalizzate.</td></tr>
+                <tr><td><strong>Due giocatori</strong></td><td>Cerca sessioni disponibili su dispositivi vicini.</td></tr>
+                <tr><td><strong>Importa asset da FDM</strong></td><td>Importa backup, combattenti o arene compatibili creati con Family Deathmatch.</td></tr>
+                <tr><td><strong>Backup e ripristino</strong></td><td>Salva o ripristina raccolta, impostazioni e storico.</td></tr>
+                <tr><td><strong>Impostazioni</strong></td><td>Gestisce backup automatico, difficoltà, suggerimenti, termini e crediti.</td></tr>
+              </tbody>
+            </table>
           </div>
-          <button class="player-button" type="button" data-player-button aria-pressed="false">
-            <span data-player-icon aria-hidden="true">▶</span>
-            <span class="visually-hidden" data-player-text>Avvia disco e musica</span>
-          </button>
-          <p class="player-status" data-player-status aria-live="polite">Pronto · premi ▶ per avviare</p>
-          <audio data-player-audio preload="metadata" src="../../assets/fzo-beta-testers-loop.mp3"></audio>
-        </div>
-      </div>
-    </section>
+        </section>
+
+        <section id="lobby">
+          <h2>Preparare l’incontro</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/lobby-tag.jpg" width="720" height="1431" loading="lazy" decoding="async" alt="Lobby TAG di Family Deathmatch RR con Team A, Team B, scelta dei combattenti e dell'arena">
+            <figcaption>La lobby TAG permette di comporre le due squadre e assegnare combattenti, controlli e arena.</figcaption>
+          </figure>
+          <p>La lobby divide i quattro combattenti in <strong>Team A</strong> (A1 e A2) e <strong>Team B</strong> (B1 e B2).</p>
+          <ul>
+            <li><strong>Cambia</strong> sostituisce il combattente del singolo riquadro. Lo stesso personaggio può comparire più volte.</li>
+            <li><strong>Controlla A1/A2/B1/B2</strong> assegna al giocatore quel combattente. Il gioco controlla la squadra avversaria e, quando necessario, gli altri membri.</li>
+            <li><strong>Spettatore</strong> affida l’incontro al gioco: due CPU nella fase TAG oppure quattro nella modalità RR.</li>
+            <li><strong>Scegli Arena</strong> usa un’arena preinstallata o personale; senza una scelta viene effettuato un sorteggio.</li>
+            <li><strong>Aggiungi giocatore remoto</strong> apre una sala d’attesa multiplayer mantenendo combattenti, squadre e arena selezionati.</li>
+          </ul>
+        </section>
+
+        <section id="tag">
+          <h2>Modalità TAG</h2>
+          <p>All’inizio combattono un membro del Team A e uno del Team B; i rispettivi compagni attendono ai lati dell’arena. La squadra vince quando entrambi gli avversari sono fuori combattimento.</p>
+          <p>La riserva recupera gradualmente energia mentre attende. Se il combattente attivo viene eliminato e il compagno è ancora disponibile, la riserva entra automaticamente.</p>
+
+          <h3>Cambio TAG volontario</h3>
+          <figure class="guide-figure landscape">
+            <img src="images/arena-cambio-tag.jpg" width="1200" height="540" loading="lazy" decoding="async" alt="Arena di Family Deathmatch RR durante un cambio volontario nella modalità TAG">
+            <figcaption>Il cambio TAG porta in arena la riserva quando tempo e posizione sono corretti.</figcaption>
+          </figure>
+          <p>Per chiedere il cambio, tocca la fotografia della tua riserva sul bordo dell’arena. Il colore indica se l’azione è disponibile:</p>
+          <ul>
+            <li><strong>Rosso</strong>: il tempo di attesa non è ancora terminato. Dopo ogni cambio occorrono circa 30 secondi.</li>
+            <li><strong>Giallo</strong>: il cambio è pronto, ma il combattente attivo deve avvicinarsi alla propria riserva.</li>
+            <li><strong>Verde</strong>: posizione e tempo sono corretti; tocca la riserva per eseguire il passaggio.</li>
+          </ul>
+          <p>Durante l’animazione del cambio i comandi vengono temporaneamente sospesi. Energia, arma e stato dei due compagni restano separati.</p>
+
+          <h3>Dalla fase TAG alla Rissa Reale</h3>
+          <p>Nel corso di un incontro TAG può attivarsi automaticamente una fase <strong>RISSA REALE!</strong>: le due riserve entrano e tutti i combattenti ancora disponibili partecipano insieme. Dopo un intervallo la partita può tornare alla configurazione TAG; se rimane un solo combattente per squadra, continua invece come Rissa Reale fino al risultato.</p>
+        </section>
+
+        <section id="rr">
+          <h2>Rissa Reale e cambio RR</h2>
+          <p>Nella fase Rissa Reale entrambi i membri di ogni squadra possono essere contemporaneamente attivi. Il pulsante centrale <strong>↻ RR</strong> non sostituisce un combattente: trasferisce il controllo umano all’altro compagno ancora in gioco, mentre il precedente passa alla CPU.</p>
+          <figure class="guide-figure landscape">
+            <img src="images/arena-cambio-rr.jpg" width="1200" height="540" loading="lazy" decoding="async" alt="Arena di Family Deathmatch RR con quattro combattenti e il comando per cambiare il personaggio controllato">
+            <figcaption>Il comando ↻ RR trasferisce il controllo umano all’altro compagno ancora attivo.</figcaption>
+          </figure>
+          <p>Il comando è disponibile soltanto se il compagno è ancora attivo. Può essere temporaneamente bloccato durante pause, transizioni, KO o eventi speciali.</p>
+
+          <h3>Incontro RR dalla Home</h3>
+          <p>Se scegli <strong>RR</strong> dalla Home, tutti e quattro i combattenti entrano subito nell’arena. Questa modalità diretta <strong>non prevede fasi TAG</strong> né il cambio con una riserva: rimane però disponibile il cambio di controllo <strong>↻ RR</strong> tra i compagni ancora attivi.</p>
+
+          <h3>Evento Second Wind (SW)</h3>
+          <p>Durante una fase Rissa Reale può verificarsi casualmente un <strong>SECOND WIND!</strong> quando una squadra è in svantaggio e possiede un compagno già eliminato. L’azione si ferma brevemente, il combattente selezionato si rialza con una quantità limitata di energia e la sfida riprende.</p>
+          <p class="guide-note">Second Wind è un evento possibile, non garantito. Può apparire sia nella Rissa Reale raggiunta da TAG sia in un incontro RR avviato direttamente.</p>
+        </section>
+
+        <section id="creazione">
+          <h2>Combattenti, arene e contenuti FDM</h2>
+          <h3>Combattenti</h3>
+          <ol>
+            <li>Apri <strong>Combattenti → Nuovo combattente</strong> e scegli una fotografia.</li>
+            <li>L’app individua localmente i volti: tocca quello da usare.</li>
+            <li>Imposta nome, orientamento, eventuale ribaltamento, forza e fino a due fotografie alternative, quindi salva.</li>
+            <li>In <strong>I miei combattenti</strong> puoi modificare, eliminare o condividere il personaggio come archivio <code>.fdmcombattente</code>.</li>
+            <li><strong>Statistiche combattenti</strong> e <strong>Storico partite</strong> mostrano risultati, modalità, avversari e arene.</li>
+          </ol>
+
+          <h3>Arene</h3>
+          <ol>
+            <li>Apri <strong>Arene → Nuova Arena</strong> e scegli un’immagine.</li>
+            <li>Sposta il riquadro sull’area da usare, assegna un nome e abilita <strong>Pavimento</strong> solo se i personaggi sembrano sospesi.</li>
+            <li>In <strong>Le mie arene</strong> puoi modificare, eliminare o condividere l’arena come archivio <code>.fdmarena</code>.</li>
+          </ol>
+
+          <h3>Importazione e backup</h3>
+          <p><strong>Importa asset da FDM</strong> accetta combattenti <code>.fdmcombattente</code>, arene <code>.fdmarena</code> e backup <code>.fdmbackup</code>. I backup completi creati da RR usano l’estensione <code>.fdmrrbackup</code> e possono essere salvati manualmente o automaticamente.</p>
+          <p class="guide-note">La condivisione usa il normale menu Android. L’elaborazione dei volti avviene sul dispositivo; FZO non riceve né conserva immagini, combattenti o arene.</p>
+        </section>
+
+        <section id="multiplayer">
+          <h2>Multiplayer tra dispositivi vicini</h2>
+          <figure class="guide-figure portrait">
+            <img src="images/lobby-multiplayer.jpg" width="720" height="1438" loading="lazy" decoding="async" alt="Sala d'attesa multiplayer di Family Deathmatch RR con ruoli Host, Guest e CPU">
+            <figcaption>La sala d’attesa multiplayer mostra combattenti, ruoli e stato di preparazione dei dispositivi.</figcaption>
+          </figure>
+          <p>I telefoni devono essere vicini. Non serve una connessione Internet, ma Android può chiedere autorizzazioni per dispositivi nelle vicinanze, Bluetooth, Wi‑Fi o posizione.</p>
+
+          <h3>Sessione nativa FDM-RR</h3>
+          <ul>
+            <li>L’organizzatore apre una lobby TAG o RR e usa <strong>Aggiungi giocatore remoto</strong>; l’altro dispositivo seleziona <strong>Due giocatori → Cerca incontro</strong>.</li>
+            <li>Due installazioni aggiornate di FDM-RR possono usare la scena completa a quattro combattenti, scegliere gli slot A1/A2/B1/B2 e assegnare Host, Guest o CPU.</li>
+            <li>Host e Guest confermano <strong>PRONTO</strong> separatamente dopo aver controllato ruoli, fighter e arena.</li>
+            <li>Il dispositivo Host è sempre l’autorità: calcola energia, collisioni, armi, cambi, eventi e risultato. Il Guest invia i comandi e applica lo stato ricevuto.</li>
+          </ul>
+
+          <h3>Compatibilità con Family Deathmatch</h3>
+          <ul>
+            <li>Una versione compatibile di Family Deathmatch può entrare come Guest in una sessione organizzata da FDM-RR, ricevendo temporaneamente combattenti, arena e stato dell’incontro.</li>
+            <li>FDM-RR può entrare come Guest in un normale incontro singolo organizzato da Family Deathmatch e partecipare alla modalità standard uno contro uno.</li>
+            <li>Le funzioni disponibili dipendono dalla compatibilità tra le versioni installate; se un comando non è supportato, la lobby impedisce di dichiararsi pronti.</li>
+          </ul>
+          <p class="guide-note">I contenuti ricevuti nel multiplayer sono usati soltanto nella sessione e non vengono importati automaticamente nella raccolta personale.</p>
+
+          <h3>Tournament Premium</h3>
+          <p>FDM-RR non organizza tornei e non partecipa come Guest alle sessioni Tournament. Il logo FZO permette di vedere l’anteprima di Tournament Premium; per provare un vero torneo organizzato da Family Deathmatch Premium come giocatore remoto si usa invece <strong>FDM Free</strong>, che può partecipare come Guest senza acquistare Premium. La separazione è intenzionale: RR resta dedicata agli incontri TAG e Rissa Reale.</p>
+        </section>
+
+        <section id="arena">
+          <h2>Comandi nell’arena</h2>
+          <div class="control-grid">
+            <div><strong>◀ / ▶</strong><span>Tieni premuto per muovere il combattente controllato a sinistra o a destra.</span></div>
+            <div><strong>💥</strong><span>Attacca; se il combattente impugna un’arma, usa l’attacco associato.</span></div>
+            <div><strong>✊</strong><span>Raccoglie un’arma quando il combattente è posizionato sopra di essa.</span></div>
+            <div><strong>Riserva</strong><span>In TAG, tocca la fotografia laterale quando è verde per effettuare il cambio.</span></div>
+            <div><strong>↻ RR</strong><span>Nella Rissa Reale trasferisce il controllo all’altro compagno ancora attivo.</span></div>
+            <div><strong>PAUSA</strong><span>Ferma l’incontro. In pausa puoi riprendere oppure uscire.</span></div>
+            <div><strong>REC</strong><span>Su Android 10 o successivo registra schermo e audio dopo le autorizzazioni Android.</span></div>
+            <div><strong>🔊 / 🔇</strong><span>Disattiva o riattiva immediatamente i suoni.</span></div>
+          </div>
+          <p>Al termine dell’incontro, <strong>RIPETI</strong> avvia una rivincita. Dopo la registrazione puoi salvare il video in <strong>Filmati/Family Deathmatch RR</strong>, condividerlo oppure eliminarlo.</p>
+        </section>
+      </article>
+    </div>
   </main>
-  <footer class="site-footer"><p><strong>FZO</strong> — Family Deathmatch RR</p><p><a href="../">FDM</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../termini/">Termini d'uso</a></p></footer>
+
+  <footer class="site-footer">
+    <p><strong>FZO</strong> — Family Deathmatch RR 0.10.1</p>
+    <p><a href="../">FDM</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../termini/">Termini d’uso</a></p>
+  </footer>
 </body>
 </html>
