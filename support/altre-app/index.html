@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Ambiente riservato al collaudo del futuro sistema FZO di assistenza e segnalazioni.">
+  <title>FZO — Area di collaudo assistenza</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/support-trial.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header"><nav class="nav" aria-label="Navigazione principale"><a class="brand" href="../../"><img class="brand-logo" src="../../assets/fzo-logo.png" alt="Logo ufficiale FZO"><span class="brand-name">FZO</span></a><div class="nav-links"><a href="../../">Home</a><a href="../">Assistenza</a><a href="./" aria-current="page">Area di prova</a></div></nav></header>
+
+  <main id="contenuto" class="page trial-shell">
+    <p class="support-breadcrumbs"><a href="../../">Home</a> → <a href="../">Assistenza e segnalazioni</a> → Altre app — Area di prova</p>
+    <div class="trial-banner"><strong>Ambiente di collaudo.</strong> Il percorso invia davvero le risposte a un registro Google separato, ma non è un canale di assistenza operativo. Usa soltanto informazioni inventate e non inserire password, dati di pagamento, immagini, documenti o diagnostica reale.</div>
+
+    <section class="trial-panel" data-trial-gate aria-labelledby="titolo-accesso-test">
+      <p class="eyebrow">Altre app · Accesso controllato</p>
+      <h1 id="titolo-accesso-test">Area di prova</h1>
+      <p class="lead">Inserisci il codice temporaneo fornito da FZO per provare la guida ramificata e l’invio al registro di collaudo.</p>
+      <form data-access-form novalidate>
+        <div class="trial-field"><label for="codice-collaudo">Codice di collaudo</label><input id="codice-collaudo" data-access-code type="password" autocomplete="off" spellcheck="false" required></div>
+        <p class="trial-error" data-access-error aria-live="polite"></p>
+        <button class="button primary" type="submit">Sblocca il percorso</button>
+      </form>
+      <p class="trial-lock-note">Questo codice è un cancello di collaudo, non sostituisce un’autenticazione. Il Google Form finale applica una propria autorizzazione dell’account rispondente.</p>
+    </section>
+
+    <section class="trial-panel" data-trial-workspace hidden aria-label="Percorso guidato di collaudo">
+      <div class="trial-step" data-trial-step="language">
+        <span class="support-step-label">1 di 7</span><h2>Scegli la lingua.</h2><p class="section-intro">La ramificazione è collaudata in italiano; la scelta linguistica viene comunque registrata per verificare la futura struttura multilingue.</p>
+        <div class="trial-options"><button class="trial-option" type="button" data-language-option="Italiano">IT · Italiano</button><button class="trial-option" type="button" data-language-option="English (UK / USA)">UK / USA · English</button><button class="trial-option" type="button" data-language-option="Français">FR · Français</button><button class="trial-option" type="button" data-language-option="Deutsch">DE · Deutsch</button><button class="trial-option" type="button" data-language-option="Español">ES · Español</button></div>
+      </div>
+
+      <div class="trial-step" data-trial-step="app" hidden>
+        <span class="support-step-label">2 di 7</span><h2>Seleziona l’app.</h2><article class="card test-card"><p class="support-card-status">Applicazione fittizia</p><h3>App di collaudo FZO</h3><p>Questa voce consente di provare tutti i percorsi senza attribuire la segnalazione a un’app realmente pubblicata.</p><button class="button primary" type="button" data-confirm-app>Continua con l’app di prova</button></article><div class="trial-actions"><button class="button" type="button" data-go-step="language">Indietro</button></div>
+      </div>
+
+      <div class="trial-step" data-trial-step="problem" hidden>
+        <span class="support-step-label">3 di 7</span><h2>Descrivi il problema con scelte guidate.</h2>
+        <div class="trial-field"><label for="categoria-test">Categoria</label><select id="categoria-test" data-category><option value="">Seleziona una categoria</option><option value="funzionamento">Funzionamento dell’app</option><option value="installazione">Installazione o aggiornamento</option><option value="accesso">Account o accesso</option><option value="connettivita">Connessione tra dispositivi</option><option value="materiali">Immagini o materiali dell’utente</option><option value="altro">Altro problema tecnico</option></select></div>
+        <div class="trial-field"><label for="problema-test">Caso da simulare</label><select id="problema-test" data-problem><option value="">Seleziona prima una categoria</option></select></div>
+        <p class="trial-error" data-problem-error aria-live="polite"></p>
+        <div class="trial-actions"><button class="button primary" type="button" data-show-solution>Mostra la soluzione proposta</button><button class="button" type="button" data-go-step="app">Indietro</button></div>
+      </div>
+
+      <div class="trial-step" data-trial-step="solution" hidden>
+        <span class="support-step-label">4 di 7</span><h2>Prova la soluzione.</h2><div class="trial-solution" data-solution-copy></div><p class="trial-legend">La soluzione ha risolto il problema?</p><div class="trial-options"><button class="trial-option" type="button" data-resolved="yes">Sì, problema risolto</button><button class="trial-option" type="button" data-resolved="no">No, il problema persiste</button></div><div class="trial-actions"><button class="button" type="button" data-go-step="problem">Indietro</button></div>
+      </div>
+
+      <div class="trial-step" data-trial-step="source" hidden>
+        <span class="support-step-label">5 di 7</span><h2>Scegli il tipo di segnalazione.</h2><p class="section-intro">Tutte le strade vengono registrate, ma raccolgono quantità di dati differenti.</p>
+        <div class="trial-options"><button class="trial-option" type="button" data-source="Anonima · problema non risolto"><strong>Anonima</strong><br>Nessun contatto, testo libero o diagnostica.</button><button class="trial-option" type="button" data-source="Utente con richiesta di contatto"><strong>Utente con contatto</strong><br>Email e diagnostica esclusivamente fittizie.</button><button class="trial-option" type="button" data-source="Beta tester"><strong>Beta tester</strong><br>Simula il percorso coperto dall’informativa beta.</button></div>
+        <div class="trial-actions"><button class="button" type="button" data-go-step="solution">Indietro</button></div>
+      </div>
+
+      <div class="trial-step" data-trial-step="submit" hidden>
+        <span class="support-step-label">6 di 7</span><h2>Controlla il riepilogo.</h2>
+        <dl class="trial-summary" data-trial-summary><div><dt>Lingua</dt><dd data-summary-language></dd></div><div><dt>App</dt><dd data-summary-app></dd></div><div><dt>Categoria</dt><dd data-summary-category></dd></div><div><dt>Problema</dt><dd data-summary-problem></dd></div><div><dt>Soluzione</dt><dd data-summary-solution></dd></div><div><dt>Risolto</dt><dd data-summary-outcome></dd></div><div><dt>Percorso</dt><dd data-summary-source></dd></div></dl>
+        <div class="notice"><strong>Informativa dimostrativa:</strong> questa schermata non costituisce un testo legale definitivo. Il registro è riservato al collaudo e deve contenere esclusivamente dati inventati. <span data-source-note></span></div>
+        <div class="trial-actions"><a class="button primary" data-test-form-link href="#modulo-test" target="_blank" rel="noopener">Apri il Google Form di prova</a><button class="button" type="button" data-go-step="solution">Modifica esito</button></div>
+        <p class="section-intro">Nel modulo ripeti le scelte appena provate e premi Invia: la risposta verrà registrata realmente nel foglio Google di collaudo.</p>
+        <span class="support-step-label">7 di 7 · Invio reale al registro TEST</span>
+        <iframe id="modulo-test" class="trial-form-frame" data-test-form-frame title="Google Form di collaudo FZO" loading="lazy"></iframe>
+        <div class="trial-actions"><button class="button" type="button" data-restart-trial>Ricomincia il collaudo</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p><strong>FZO</strong> — Ambiente di collaudo assistenza</p><p><a href="../">Torna ad Assistenza e segnalazioni</a></p></footer>
+</body>
+</html>

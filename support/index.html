@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hub FZO per assistenza, guide di risoluzione e segnalazioni relative alle applicazioni.">
+  <title>FZO — Assistenza e segnalazioni</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/support-hub.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="brand" href="../"><img class="brand-logo" src="../assets/fzo-logo.png" alt="Logo ufficiale FZO"><span class="brand-name">FZO</span></a>
+      <div class="nav-links"><a href="../">Home</a><a href="./" aria-current="page">Assistenza</a><a href="../beta-testers/">βeta Testers</a></div>
+    </nav>
+  </header>
+  <main id="contenuto" class="page">
+    <header class="page-header support-hero">
+      <p class="eyebrow">Supporto FZO · Work in progress</p>
+      <h1>Assistenza e segnalazioni</h1>
+      <p class="lead">Questo spazio raccoglierà guide ramificate per individuare soluzioni semplici e, quando necessario, inoltrare una segnalazione. Le sezioni operative delle app sono ancora in preparazione.</p>
+    </header>
+
+    <div class="notice"><strong>Stato della sezione:</strong> le pagine delle applicazioni sono segnaposto WiP. L’area “Altre app” è un ambiente di collaudo protetto e usa un registro Google separato da qualunque futuro sistema operativo.</div>
+
+    <section class="section" aria-labelledby="lingua-supporto">
+      <span class="support-step-label">Passaggio 1</span>
+      <h2 id="lingua-supporto">Scegli la lingua.</h2>
+      <p class="section-intro">La scelta viene conservata soltanto nella sessione corrente. In questa prima versione i contenuti estesi restano in italiano, mentre il percorso linguistico è già predisposto.</p>
+      <div class="support-language-grid" role="group" aria-label="Lingua dell'assistenza">
+        <button class="support-language-button" type="button" data-support-language="it">IT · Italiano</button>
+        <button class="support-language-button" type="button" data-support-language="en">UK / USA · English</button>
+        <button class="support-language-button" type="button" data-support-language="fr">FR · Français</button>
+        <button class="support-language-button" type="button" data-support-language="de">DE · Deutsch</button>
+        <button class="support-language-button" type="button" data-support-language="es">ES · Español</button>
+      </div>
+      <p class="support-selection-status" data-support-language-status aria-live="polite"></p>
+    </section>
+
+    <section id="seleziona-app" class="section" aria-labelledby="app-supporto">
+      <span class="support-step-label">Passaggio 2</span>
+      <h2 id="app-supporto">Seleziona l’app.</h2>
+      <p class="section-intro">Ogni applicazione avrà una guida di assistenza autonoma. Gli indirizzi qui predisposti potranno restare invariati durante la crescita del sito.</p>
+      <div class="grid support-app-grid">
+        <article class="card red support-app-card"><p class="support-card-status">WiP</p><h3>Family Deathmatch</h3><p>Guida ramificata di assistenza in preparazione.</p><a class="button" data-support-app-link href="family-deathmatch/">Apri FDM</a></article>
+        <article class="card red support-app-card"><p class="support-card-status">WiP</p><h3>FDM Rissa Reale</h3><p>Guida ramificata dedicata a Rissa Reale in preparazione.</p><a class="button" data-support-app-link href="family-deathmatch-rissa-reale/">Apri FDM-RR</a></article>
+        <article class="card blue support-app-card"><p class="support-card-status">WiP</p><h3>SchoolMasterScan</h3><p>Guida ramificata multilingue in preparazione.</p><a class="button" data-support-app-link href="schoolmasterscan/">Apri SMS</a></article>
+        <article class="card support-app-card test-card"><p class="support-card-status">Area riservata al collaudo</p><h3>Altre app</h3><p>Prova il flusso completo: soluzione guidata, esito, tipologia di segnalazione e invio reale al registro di test.</p><a class="button primary" data-support-app-link href="altre-app/">Entra con codice</a></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p><strong>FZO Developer</strong> — Assistenza e segnalazioni</p><p><a href="../">Home</a> · <a href="../beta-testers/">FZO βeta Testers</a></p></footer>
+</body>
+</html>

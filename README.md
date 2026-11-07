@@ -1,5 +1,11 @@
 # FZO GitHub Pages
 
+## 2026-11-07 — Assistenza e segnalazioni · collaudo
+
+Nuova sezione pubblica `/support/` con scelta della lingua e dell'applicazione. Le pagine di assistenza di Family Deathmatch, FDM Rissa Reale e SchoolMasterScan restano esplicitamente WiP e utilizzano l'asset giradischi.
+
+Il percorso `/support/altre-app/` è un ambiente dimostrativo protetto da codice temporaneo, escluso dall'indicizzazione e collegato a un Google Form riservato all'account FZO. Il modulo e il foglio collegato sono separati dalla futura infrastruttura operativa e devono contenere esclusivamente dati fittizi.
+
 ## 2026-11-04 — Pubblicazione iniziale v1.0
 
 Stato previsto: **pubblico tramite GitHub Pages dopo il commit e l'attivazione esplicita**.
