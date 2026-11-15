@@ -1,5 +1,9 @@
 # FZO GitHub Pages
 
+## 2026-11-15 — Logo FDM nella main
+
+Sostituita l'illustrazione astratta del ring nella testata Family Deathmatch con il marchio FDM ricavato dal banner dell'arena Wrestling. Il logo è isolato su trasparenza, mantiene lettere, profilo nero e stella rossa ed è inserito nella cornice preesistente con ridimensionamento responsivo e testo alternativo accessibile.
+
 ## 2026-11-15 — Correzione mobile FDM e regola editoriale Asset
 
 Corretta la testata della main Family Deathmatch sui telefoni: titolo, testo e pulsanti restano entro la cornice anche sui viewport stretti. Le raccolte Combattenti e Arene adottano ora una carta più vissuta, con grana, leggere macchie, variazioni di tono e ombreggiatura interna ottenute senza introdurre nuove immagini esterne.
