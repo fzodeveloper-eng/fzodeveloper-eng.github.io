@@ -1,5 +1,13 @@
 # FZO GitHub Pages
 
+## 2026-11-15 — Asset gratuiti Family Deathmatch
+
+Pubblicata la raccolta permanente `/family-deathmatch/asset/`, destinata al futuro comando **Asset scaricabili** di Family Deathmatch e Family Deathmatch Rissa Reale. Il flusso resta volutamente manuale: download dal sito e importazione dall'app mediante il selettore file Android; non è stata introdotta alcuna importazione diretta dal browser.
+
+La prima edizione comprende quattro combattenti nativi `.fdmcombattente` — Zio Peppino, Mario R, Zia Adelina e Antonella R — e due arene `.fdmarena` — Cartoon Kitchen e Arena Wrestling. I pacchetti sono dichiarati compatibili con entrambe le app. Per ogni asset sono disponibili una pagina dedicata, l'anteprima, le istruzioni brevi, il download versionato e l'impronta SHA-256.
+
+Le raccolte `/family-deathmatch/asset/combattenti/` e `/family-deathmatch/asset/arene/` adottano una grafica da giornale sportivo anni Settanta, verificata anche su schermo mobile. Le arene sono state confezionate secondo il formato di esportazione definito dal codice corrente delle app (`archiveVersion 3`, manifest arena `schemaVersion 2`); la struttura degli archivi e la decodifica delle immagini sono state validate staticamente. L'importazione su dispositivo reale resta da collaudare. Nessun codice Android è stato modificato.
+
 ## 2026-11-08 — Termini d'uso Versione 1.0
 
 Pubblicati i Termini d'uso italiani specifici di Family Deathmatch, Family Deathmatch Rissa Reale e SchoolMasterScan. Gli URL preesistenti `/family-deathmatch/termini/` e `/schoolmasterscan/termini/` restano stabili e diventano hub linguistici.
