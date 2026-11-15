@@ -1,5 +1,11 @@
 # FZO GitHub Pages
 
+## 2026-11-15 — Correzione mobile FDM e regola editoriale Asset
+
+Corretta la testata della main Family Deathmatch sui telefoni: titolo, testo e pulsanti restano entro la cornice anche sui viewport stretti. Le raccolte Combattenti e Arene adottano ora una carta più vissuta, con grana, leggere macchie, variazioni di tono e ombreggiatura interna ottenute senza introdurre nuove immagini esterne.
+
+La testata dell'edizione inaugurale dei combattenti resta invariata. Per gli aggiornamenti successivi, il nuovo combattente sarà inserito in apertura con classe editoriale `featured`, titolo e testo personalizzati; all'uscita seguente rientrerà nella griglia ordinaria. La stessa convenzione vale per le nuove arene. In questo modo il giornale conserva la propria prima edizione e non richiede la riscrittura dei testi storici a ogni caricamento.
+
 ## 2026-11-15 — Asset gratuiti Family Deathmatch
 
 Pubblicata la raccolta permanente `/family-deathmatch/asset/`, destinata al futuro comando **Asset scaricabili** di Family Deathmatch e Family Deathmatch Rissa Reale. Il flusso resta volutamente manuale: download dal sito e importazione dall'app mediante il selettore file Android; non è stata introdotta alcuna importazione diretta dal browser.

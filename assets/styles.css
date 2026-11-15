@@ -150,6 +150,8 @@ button:focus-visible {
   box-shadow: 10px 10px 0 rgba(99, 230, 223, .22), inset 0 0 0 5px #0b0c0e;
 }
 
+.hero > * { min-width: 0; }
+
 .eyebrow {
   margin: 0 0 .9rem;
   color: var(--blue);
@@ -612,6 +614,14 @@ h3 { font-size: 1.35rem; }
   .nav-links { margin-top: .8rem; justify-content: flex-start; }
   .nav-links a { padding-left: 0; margin-right: .7rem; }
   h1 { font-size: clamp(2.7rem, 17vw, 4.2rem); }
+  .fdm-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.35rem, 12vw, 3.2rem);
+    letter-spacing: -.055em;
+    overflow-wrap: normal;
+  }
+  .fdm-hero .actions { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .fdm-hero .button { width: 100%; max-width: 100%; white-space: normal; }
   .guide-table th,
   .guide-table td { padding: .7rem .65rem; }
   .guide-table td:first-child { width: 8.5rem; }
@@ -787,10 +797,19 @@ h3 { font-size: 1.35rem; }
   padding: clamp(1rem, 3vw, 2.5rem);
   border: 9px double #241d11;
   background:
-    repeating-linear-gradient(0deg, rgba(73, 57, 30, .035) 0 1px, transparent 1px 4px),
-    #e7d39d;
+    radial-gradient(ellipse at 4% 9%, rgba(91, 48, 16, .19) 0 1.6%, transparent 7%),
+    radial-gradient(ellipse at 94% 6%, rgba(113, 62, 19, .16) 0 2%, transparent 9%),
+    radial-gradient(ellipse at 87% 88%, rgba(91, 48, 16, .18) 0 2%, transparent 11%),
+    radial-gradient(circle at 13% 78%, rgba(128, 76, 25, .1) 0 1%, transparent 7%),
+    repeating-linear-gradient(0deg, rgba(73, 57, 30, .045) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(91deg, transparent 0 13px, rgba(87, 62, 28, .022) 13px 14px),
+    #e2cb8f;
+  background-blend-mode: multiply, multiply, multiply, multiply, multiply, normal, normal;
   color: #211a0f;
-  box-shadow: 10px 10px 0 rgba(185, 71, 47, .3);
+  box-shadow:
+    10px 10px 0 rgba(185, 71, 47, .3),
+    inset 0 0 2.8rem rgba(75, 42, 13, .23),
+    inset 0 0 .8rem rgba(255, 244, 191, .38);
 }
 .asset-paper a { color: inherit; }
 .asset-masthead {
@@ -846,6 +865,16 @@ h3 { font-size: 1.35rem; }
 }
 .sports-story:nth-child(odd) { border-right: 1px solid #4b3b22; }
 .sports-story:hover { background: rgba(255,255,255,.18); }
+.sports-story.featured {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(13rem, .8fr) minmax(0, 1.2fr);
+  grid-template-rows: none;
+  align-items: center;
+  border-top: 4px double #211a0f;
+  border-right: 0;
+  border-bottom: 4px double #211a0f;
+  background: rgba(255, 248, 211, .16);
+}
 .sports-story img {
   width: 100%;
   aspect-ratio: 1;
@@ -971,6 +1000,7 @@ h3 { font-size: 1.35rem; }
 @media (max-width: 680px) {
   .sports-grid { grid-template-columns: 1fr; }
   .sports-story:nth-child(odd) { border-right: 0; }
+  .sports-story.featured { grid-template-columns: 1fr; }
   .sports-grid.arenas .sports-story { grid-template-columns: 1fr; }
   .asset-masthead h1 {
     font-size: clamp(1.65rem, 8vw, 2.8rem);
