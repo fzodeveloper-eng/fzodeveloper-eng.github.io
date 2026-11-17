@@ -583,6 +583,8 @@ h3 { font-size: 1.35rem; }
 .legal-document > section p { color: var(--muted); line-height: 1.75; }
 .legal-document > section li { color: var(--muted); line-height: 1.75; }
 .legal-document > section h2 { color: var(--blue); font-size: clamp(1.45rem, 3vw, 2rem); text-shadow: 2px 2px 0 #143a3b; }
+.legal-document a,
+.legal-document code { overflow-wrap: anywhere; word-break: break-word; }
 
 .legal-signature { margin-top: 2rem; padding: 1.2rem 1.4rem; border: 1px dashed var(--gold); background: rgba(255, 189, 62, .06); }
 

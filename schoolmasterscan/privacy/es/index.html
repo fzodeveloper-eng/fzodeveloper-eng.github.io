@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad oficial de SchoolMasterScan, Versión 1.0 en español.">
+  <link rel="canonical" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/es/">
+  <title>SchoolMasterScan — Política de privacidad 1.0</title>
+  <link rel="stylesheet" href="../../../assets/styles.css">
+  <link rel="alternate" hreflang="it" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/it/">
+  <link rel="alternate" hreflang="en" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/en/">
+  <link rel="alternate" hreflang="fr" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/fr/">
+  <link rel="alternate" hreflang="de" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/de/">
+  <link rel="alternate" hreflang="es" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/es/">
+  <link rel="alternate" hreflang="x-default" href="https://fzodeveloper-eng.github.io/schoolmasterscan/privacy/">
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Ir al contenido</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="../../../"><img class="brand-logo" src="../../../assets/fzo-logo.png" alt="Logo FZO"><span class="brand-name">FZO</span></a>
+      <div class="nav-links"><a href="../../../">Home</a><a href="../../">SchoolMasterScan</a><a href="../">Privacidad</a><a href="./" aria-current="page">Español</a></div>
+    </nav>
+  </header>
+  <main id="contenuto" class="page legal-document">
+    <header class="page-header guide-heading">
+      <p class="eyebrow"><span class="flag flag-es" aria-hidden="true"></span> Español · Documento oficial</p>
+      <div class="guide-app-heading"><img class="schoolmaster-icon" src="../../../assets/schoolmasterscan-icon.png" alt="SchoolMasterScan"><h1>Política de privacidad</h1></div>
+      <p class="lead">SCHOOLMASTERSCAN</p>
+      <div class="language-switcher" aria-label="Idiomas de la política de privacidad"><a href="../it/">IT</a><a href="../en/">EN</a><a href="../fr/">FR</a><a href="../de/">DE</a><a href="../es/" aria-current="page">ES</a></div>
+    </header>
+    <p><strong>Versión:</strong> 1.0<br>
+<strong>Última actualización:</strong> 17 de noviembre de 2026<br>
+<strong>Aplicación:</strong> SCHOOLMASTERSCAN (<code>com.fzo.schoolmasterscan</code>)</p>
+    <section><h2>1. Responsable del tratamiento y datos de contacto</h2>
+    <p>SCHOOLMASTERSCAN está desarrollada y publicada por <strong>Francesco Zanaglio</strong>, desarrollador independiente que opera bajo la denominación <strong>FZO</strong>.</p>
+    <p>Para información o solicitudes relacionadas con la privacidad, puede escribir a:</p>
+    <p><strong>fzo.developer@gmail.com</strong></p>
+    <p>Sitio web oficial: <a href="https://fzodeveloper-eng.github.io/">https://fzodeveloper-eng.github.io/</a></p>
+    </section>
+    <section><h2>2. Principios generales</h2>
+    <p>SCHOOLMASTERSCAN es una aplicación Android que permite capturar o importar imágenes de documentos, reconocer su texto mediante reconocimiento óptico de caracteres (OCR), realizar correcciones y anotaciones gráficas y guardar o compartir el resultado.</p>
+    <p>La aplicación está diseñada para procesar localmente las imágenes, el texto reconocido y las correcciones. No requiere una cuenta FZO ni utiliza servidores FZO para recibir o almacenar documentos. FZO no dispone de un archivo remoto o centralizado de los documentos procesados.</p>
+    <p>Algunas funciones utilizan componentes de Google y servicios de Android que pueden tratar información técnica conforme a sus respectivas políticas, como se describe a continuación.</p>
+    </section>
+    <section><h2>3. Documentos y datos tratados en el dispositivo</h2>
+    <p>Según las funciones elegidas por el usuario, la aplicación puede tratar localmente:</p>
+    <ul>
+  <li>imágenes capturadas con la cámara o el escáner e imágenes seleccionadas mediante el selector de Android;</li>
+  <li>texto reconocido mediante OCR, incluidas palabras, líneas y sus posiciones;</li>
+  <li>selecciones, marcas, ocultaciones, colores y texto introducido por el usuario;</li>
+  <li>preferencias relativas, entre otros aspectos, al idioma, tema, colores, fuentes, visualización y método de adquisición;</li>
+  <li>información local sobre la aceptación de las Condiciones de uso, el modo de desarrollador, el acceso Premium y la DEMO para revisores.</li>
+</ul>
+    <p>Los documentos elegidos por el usuario pueden contener datos personales, datos relativos a menores u otros terceros, información confidencial y, según su contenido, categorías especiales de datos personales.</p>
+    <p>El código FZO de la aplicación no envía automáticamente a FZO imágenes, texto OCR, correcciones ni documentos. La aplicación no crea una base de datos ni un historial permanente de documentos editables.</p>
+    </section>
+    <section><h2>4. Adquisición, escáner y OCR</h2>
+    <p>La captura directa con la cámara crea una imagen temporal en la caché privada de la aplicación. La selección desde la galería utiliza el selector de contenido de Android y afecta únicamente a la imagen elegida por el usuario.</p>
+    <p>La función Escáner utiliza <strong>Google Play services Document Scanner</strong>, configurado para una sola página y salida JPEG. Google proporciona a través de Play services la interfaz, la lógica de escaneado y los modelos necesarios; según la documentación de Google, el flujo de escaneado funciona en el dispositivo.</p>
+    <p>El reconocimiento de texto utiliza <strong>Google ML Kit Text Recognition</strong>. Las imágenes y los resultados del OCR se procesan en el dispositivo y no se envían a los servidores de Google para realizar el reconocimiento.</p>
+    <p>No obstante, ML Kit recoge datos técnicos para diagnóstico y análisis de uso, incluida información sobre el dispositivo y la aplicación, identificadores técnicos por instalación, métricas de rendimiento como la latencia, configuración de la API y formato o resolución de la imagen, tamaño de entrada y salida, versión de la función, tipos de eventos y códigos de error. Google declara que estos datos se cifran en tránsito mediante HTTPS y que ML Kit no los transfiere a terceros. Los componentes también pueden comunicarse con Google para descargas, actualizaciones, correcciones y comprobaciones de compatibilidad.</p>
+    <p>Más información:</p>
+    <ul>
+  <li><a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+  <li><a href="https://developers.google.com/ml-kit/vision/doc-scanner/android">https://developers.google.com/ml-kit/vision/doc-scanner/android</a></li>
+  <li><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+    </section>
+    <section><h2>5. Guardado y uso compartido</h2>
+    <p>Cuando el usuario selecciona <strong>Guardar</strong>, la aplicación genera un único archivo JPEG del documento procesado y lo inserta en la colección compartida de imágenes del dispositivo mediante Android MediaStore, normalmente en <code>Pictures/SCHOOLMASTERSCAN</code>. El archivo permanece en la galería hasta que lo elimine el usuario o un servicio utilizado por este; la desinstalación de la aplicación no lo elimina necesariamente.</p>
+    <p>Cuando el usuario selecciona <strong>Compartir</strong>, la aplicación genera en cambio un archivo JPEG temporal en su caché privada, sin añadir ninguna imagen a la galería. Android concede acceso de lectura al archivo a la aplicación destinataria elegida por el usuario. Los archivos de compartición anteriores presentes en la carpeta de caché se eliminan cuando se prepara un nuevo envío; la caché también puede ser eliminada por el sistema, al borrar los datos de la aplicación o al desinstalarla.</p>
+    <p>Las aplicaciones y personas destinatarias pueden conservar o tratar de forma autónoma las copias recibidas. FZO no controla ese tratamiento posterior.</p>
+    </section>
+    <section><h2>6. Preferencias, copia de seguridad de Android y transferencia de dispositivo</h2>
+    <p>Los ajustes y otros estados aptos de la aplicación se almacenan localmente en sus preferencias. La configuración de Android permite la copia de seguridad en la nube y la transferencia entre dispositivos de las preferencias aptas, en función de los ajustes del dispositivo y de la cuenta y de los servicios Android utilizados por el usuario.</p>
+    <p>Esta copia de seguridad no constituye un archivo de documentos: no incluye, como datos privados de la aplicación, imágenes capturadas o importadas, texto OCR, correcciones, archivos JPEG temporales de caché ni archivos JPEG guardados en la galería.</p>
+    <p>Las preferencias dedicadas a la <strong>DEMO para revisores</strong> y al <strong>estado local del derecho Premium</strong> están expresamente excluidas tanto de la copia de seguridad en la nube como de la transferencia entre dispositivos. Una compra Premium se verifica y restaura consultando Google Play.</p>
+    <p>Los archivos JPEG guardados en la galería pueden estar cubiertos por separado por servicios de copia de seguridad o sincronización de fotos activados por el usuario; estos servicios funcionan de manera independiente de la copia de seguridad de datos de SCHOOLMASTERSCAN.</p>
+    </section>
+    <section><h2>7. Funciones Premium, Google Play Billing y DEMO para revisores</h2>
+    <p>SCHOOLMASTERSCAN integra <strong>Google Play Billing 9.1.0</strong>. Las funciones Premium se ofrecen mediante la compra única no consumible <code>sms_premium_unlock</code>, sin suscripción periódica.</p>
+    <p>Google Play gestiona la presentación del producto y del precio, la compra, el pago, la confirmación y la información asociada a la cuenta de Google. La aplicación se comunica con Google Play para consultar el producto, iniciar la compra, comprobar su estado, confirmarla y restaurar un derecho Premium adquirido anteriormente. FZO no recibe los datos completos de las tarjetas de pago ni trata directamente las transacciones financieras.</p>
+    <p>La aplicación solo conserva localmente un estado de activación necesario para habilitar las funciones Premium; el código FZO no almacena localmente el token de compra. Google Play sigue siendo la fuente autorizada para restaurar la compra.</p>
+    <p>La <strong>DEMO para revisores de Google Play</strong> es un modo local distinto de la compra. El código introducido se verifica en el dispositivo comparando su huella criptográfica, sin iniciar ningún pago ni modificar la titularidad de una compra. El estado DEMO se guarda en una preferencia local separada, puede desactivarse de forma independiente y está excluido de la copia de seguridad y de la transferencia del dispositivo.</p>
+    <p>Política de privacidad de Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+    </section>
+    <section><h2>8. Diagnóstico y comunicaciones promocionales</h2>
+    <p>SCHOOLMASTERSCAN no integra SDK publicitarios de terceros, sistemas de perfilado de FZO, Firebase Analytics, Crashlytics ni un servicio FZO de recogida automática de telemetría.</p>
+    <p>Una función de diagnóstico local, disponible tras activar el modo de desarrollador, mantiene en memoria un número limitado de eventos técnicos. El informe puede incluir las versiones de la aplicación y de Android, el nivel de API, el fabricante y modelo del dispositivo, la memoria y el espacio disponibles, el método de adquisición, el tipo MIME cuando esté disponible, las dimensiones de la imagen, la duración y el resultado de las operaciones, los recuentos de palabras y líneas y las clases de error. No está diseñado para incluir imágenes, texto OCR, texto de las correcciones, rutas, URI ni nombres de documentos.</p>
+    <p>El informe no se transmite automáticamente a FZO. Solo sale de la aplicación si el usuario decide copiarlo al portapapeles o compartirlo mediante una aplicación destinataria.</p>
+    <p>La aplicación puede mostrar comunicaciones de autopromoción relacionadas con otras aplicaciones FZO. El contenido promocional está integrado en la aplicación; abrir Google Play o un navegador requiere una acción del usuario y el tratamiento posterior depende del servicio abierto.</p>
+    </section>
+    <section><h2>9. Finalidades y bases jurídicas</h2>
+    <p>Los tratamientos relacionados con la aplicación tienen como finalidad permitir la adquisición, el reconocimiento, la modificación, el guardado y el uso compartido de documentos; conservar preferencias y estados de la aplicación; gestionar y restaurar las funciones Premium; proporcionar acceso DEMO local a los revisores; y responder a las comunicaciones enviadas a FZO.</p>
+    <p>Cuando sea aplicable el Reglamento (UE) 2016/679 (RGPD), los tratamientos realizados bajo la responsabilidad de FZO y necesarios para prestar las funciones solicitadas por el usuario se basan, cuando corresponda, en la ejecución del contrato (artículo 6, apartado 1, letra b).</p>
+    <p>Las comunicaciones enviadas voluntariamente a FZO se tratan para responder a las solicitudes y pueden basarse, según el caso, en la ejecución del contrato o en el interés legítimo de gestionar las comunicaciones pertinentes (artículo 6, apartado 1, letra f). Las obligaciones legales pueden justificar un tratamiento conforme al artículo 6, apartado 1, letra c; la formulación, el ejercicio o la defensa de reclamaciones puede basarse en el interés legítimo dentro de los límites permitidos.</p>
+    <p>La aceptación de las Condiciones de uso no constituye automáticamente un consentimiento para el tratamiento de datos personales. Los tratamientos realizados de forma independiente por Google y otros servicios se describen en sus respectivas políticas.</p>
+    </section>
+    <section><h2>10. Conservación y supresión</h2>
+    <p>Las imágenes y los datos del editor permanecen normalmente en la memoria o la caché durante el tiempo necesario para utilizar la función. SCHOOLMASTERSCAN no mantiene un archivo permanente de documentos editables.</p>
+    <p>Las preferencias locales permanecen hasta que se modifican, restablecen o eliminan. Los archivos temporales de caché pueden ser sustituidos o eliminados por la aplicación o el sistema, al borrar los datos de la aplicación o al desinstalarla.</p>
+    <p>El borrado de los datos de la aplicación o su desinstalación elimina normalmente los datos privados locales, pero no elimina necesariamente:</p>
+    <ul>
+  <li>los archivos JPEG guardados en la galería;</li>
+  <li>las copias compartidas con otras aplicaciones o personas;</li>
+  <li>las copias conservadas por servicios de copia de seguridad o sincronización de fotos;</li>
+  <li>las preferencias aptas ya conservadas por el servicio de copia de seguridad de Android, conforme a sus reglas;</li>
+  <li>la información sobre compras conservada por Google Play.</li>
+</ul>
+    <p>Las comunicaciones enviadas directamente a FZO se conservan durante el tiempo necesario para gestionar la solicitud y las posibles obligaciones legales o necesidades de formulación, ejercicio o defensa de reclamaciones.</p>
+    </section>
+    <section><h2>11. Destinatarios, proveedores externos y transferencias</h2>
+    <p>FZO no gestiona un archivo centralizado de los documentos de los usuarios. Según las funciones utilizadas, la información puede ser tratada o recibida por:</p>
+    <ul>
+  <li><strong>Google</strong>, a través de Android, Google Play services, ML Kit y Google Play Billing;</li>
+  <li>el proveedor del servicio Android de copia de seguridad o transferencia configurado por el usuario;</li>
+  <li>las aplicaciones y personas elegidas por el usuario como destinatarias al compartir;</li>
+  <li><strong>FZO</strong>, únicamente respecto de la información enviada voluntariamente, por ejemplo por correo electrónico.</li>
+</ul>
+    <p>Las funciones y responsabilidades de los proveedores externos dependen de cada servicio y operación de tratamiento. Para los tratamientos de Google y las posibles transferencias internacionales y garantías correspondientes, deben consultarse las políticas y la documentación del proveedor.</p>
+    </section>
+    <section><h2>12. Menores y contenidos de terceros</h2>
+    <p>SCHOOLMASTERSCAN es una herramienta general de adquisición y corrección de documentos y no está dirigida específicamente a menores.</p>
+    <p>Los documentos tratados pueden contener datos relativos a menores u otros terceros. El usuario es responsable de disponer de los derechos, permisos y demás fundamentos necesarios para capturar, modificar, guardar y compartir dichos contenidos.</p>
+    <p>La aplicación no solicita la edad del usuario ni utiliza los documentos para identificar o elaborar perfiles de las personas representadas.</p>
+    </section>
+    <section><h2>13. Derechos de los interesados</h2>
+    <p>En los casos previstos por el RGPD, los interesados pueden ejercer los derechos de acceso, rectificación, supresión, limitación del tratamiento, oposición y portabilidad, con arreglo a las condiciones aplicables.</p>
+    <p>Las solicitudes relativas a datos personales que puedan ser tratados directamente por FZO pueden enviarse a:</p>
+    <p><strong>fzo.developer@gmail.com</strong></p>
+    <p>El usuario puede gestionar directamente los contenidos almacenados únicamente en el dispositivo. FZO no tiene acceso remoto a ellos y no puede eliminar copias conservadas por Google, servicios de copia de seguridad, aplicaciones destinatarias u otras personas.</p>
+    <p>Los interesados pueden presentar una reclamación ante la autoridad de control competente. En Italia: <strong>Garante per la protezione dei dati personali</strong>, <a href="https://www.garanteprivacy.it/">https://www.garanteprivacy.it/</a>.</p>
+    </section>
+    <section><h2>14. Cambios en esta Política de privacidad</h2>
+    <p>Esta Política puede actualizarse para reflejar cambios en la aplicación, los servicios utilizados o la normativa aplicable. La versión actualizada se publicará en el sitio web oficial de FZO con la fecha de la última actualización. Si los cambios son sustanciales, se informará a los usuarios por medios adecuados.</p>
+    </section>
+    <hr>
+    <p><strong>FZO — Francesco Zanaglio</strong><br>
+<strong>Contacto:</strong> fzo.developer@gmail.com<br>
+<strong>Sitio web:</strong> <a href="https://fzodeveloper-eng.github.io/">https://fzodeveloper-eng.github.io/</a></p>
+  </main>
+  <footer class="site-footer">
+    <p><strong>FZO</strong> — SchoolMasterScan</p>
+    <p><a href="../../">SchoolMasterScan</a> · <a href="../../guida/">Guía</a> · <a href="../../privacy/">Privacidad</a> · <a href="../../termini/">Términos de uso</a></p>
+  </footer>
+</body>
+</html>
