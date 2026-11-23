@@ -3,22 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guida multilingue di assistenza SchoolMasterScan in preparazione.">
-  <title>Assistenza SchoolMasterScan — Work in progress</title>
+  <meta name="description" content="Guida ramificata di assistenza e segnalazioni per SchoolMasterScan.">
+  <title>Assistenza SchoolMasterScan — FZO</title>
   <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/wip-vinyl.css">
-  <script src="../../assets/wip-vinyl.js" defer></script>
+  <script src="../../assets/support-sms.js" defer></script>
 </head>
-<body class="beta-page">
+<body>
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
-  <header class="site-header"><nav class="nav" aria-label="Navigazione principale"><a class="brand" href="../../"><img class="brand-logo" src="../../assets/fzo-logo.png" alt="Logo ufficiale FZO"><span class="brand-name">FZO</span></a><div class="nav-links"><a href="../../">Home</a><a href="../">Assistenza</a><a href="./" aria-current="page">SchoolMasterScan</a></div></nav></header>
-  <main id="contenuto" class="page">
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="brand" href="../../"><img class="brand-logo" src="../../assets/fzo-logo.png" alt="Logo ufficiale FZO"><span class="brand-name">FZO</span></a>
+      <div class="nav-links"><a href="../../">Home</a><a href="../">Assistenza</a><a href="./" aria-current="page">SchoolMasterScan</a></div>
+    </nav>
+  </header>
+
+  <main id="contenuto" class="page sms-support-shell">
     <p class="support-breadcrumbs"><a href="../../">Home</a> → <a href="../">Assistenza e segnalazioni</a> → SchoolMasterScan</p>
-    <section class="wip-shell" aria-labelledby="titolo-supporto-sms">
-      <div class="wip-player" data-wip-player><div class="turntable"><div class="vinyl" data-vinyl aria-hidden="true"><img class="vinyl-label" src="../../assets/fzo-vinyl-label-640.jpg" alt=""><span class="spindle-hub"></span></div><div class="tonearm" data-tonearm aria-hidden="true"><span class="tonearm-head"></span><span class="tonearm-shaft"></span><span class="tonearm-pivot"></span></div><button class="player-button" type="button" data-player-button aria-pressed="false"><span data-player-icon aria-hidden="true">▶</span><span class="visually-hidden" data-player-text>Avvia disco e musica</span></button><p class="player-status" data-player-status aria-live="polite">Pronto · premi ▶ per avviare</p><audio data-player-audio preload="metadata" src="../../assets/fzo-beta-testers-loop.mp3"></audio></div></div>
-      <div class="wip-copy"><div class="schoolmaster-heading"><img class="schoolmaster-icon" src="../../assets/schoolmasterscan-icon.png" alt="Icona di SchoolMasterScan"><h1 id="titolo-supporto-sms">Guida ramificata</h1></div><p class="eyebrow">Assistenza SchoolMasterScan · Work in progress</p><p class="lead">La guida multilingue di risoluzione dei problemi di SchoolMasterScan è in preparazione. In questa fase la pagina non raccoglie né trasmette dati.</p><p class="beta-status">Nessun modulo attivo</p><div class="actions"><a class="button" href="../">Torna alla scelta dell’app</a></div></div>
+
+    <header class="page-header sms-support-hero">
+      <div class="schoolmaster-heading">
+        <img class="schoolmaster-icon" src="../../assets/schoolmasterscan-icon.png" alt="Icona di SchoolMasterScan">
+        <div><p class="eyebrow" data-i18n="eyebrow">Assistenza FZO · Guida operativa</p><h1 data-i18n="title">SchoolMasterScan</h1></div>
+      </div>
+      <p class="lead" data-i18n="lead">Scegli ciò che non funziona, prova la soluzione proposta e registra l’esito. Il percorso conserva anche i problemi risolti, così FZO può migliorare progressivamente l’app e la guida.</p>
+    </header>
+
+    <section class="sms-language-bar" aria-labelledby="sms-language-title">
+      <h2 id="sms-language-title" data-i18n="languageTitle">Lingua della guida</h2>
+      <div class="support-language-grid" role="group" aria-label="Lingua della guida SchoolMasterScan">
+        <button class="support-language-button" type="button" data-sms-language="it">IT · Italiano</button>
+        <button class="support-language-button" type="button" data-sms-language="en">UK / USA · English</button>
+        <button class="support-language-button" type="button" data-sms-language="fr">FR · Français</button>
+        <button class="support-language-button" type="button" data-sms-language="de">DE · Deutsch</button>
+        <button class="support-language-button" type="button" data-sms-language="es">ES · Español</button>
+      </div>
     </section>
+
+    <div class="sms-data-note"><strong data-i18n="privacyTitle">Dati minimi.</strong> <span data-i18n="privacyCopy">Non inviare immagini o documenti, password, dati di pagamento o il testo dei documenti scansionati. Puoi registrare l’esito in forma anonima; email e diagnostica testuale sono facoltative.</span></div>
+
+    <section class="sms-support-panel" data-sms-step="category" aria-labelledby="sms-category-title">
+      <span class="support-step-label" data-i18n="step1">Passaggio 1</span>
+      <h2 id="sms-category-title" data-i18n="categoryTitle">Che cosa non funziona?</h2>
+      <p class="section-intro" data-i18n="categoryIntro">Parti dal sintomo che osservi. Non è necessario conoscere la causa tecnica.</p>
+      <div class="sms-category-grid" data-sms-categories></div>
+    </section>
+
+    <section class="sms-support-panel" data-sms-step="problem" aria-labelledby="sms-problem-title" hidden>
+      <span class="support-step-label" data-i18n="step2">Passaggio 2</span>
+      <h2 id="sms-problem-title" data-sms-problem-heading></h2>
+      <div class="sms-problem-list" data-sms-problems></div>
+      <div class="sms-support-actions"><button class="button" type="button" data-sms-back="category" data-i18n="backCategories">Torna alle categorie</button></div>
+    </section>
+
+    <section class="sms-support-panel" data-sms-step="solution" aria-labelledby="sms-solution-title" hidden>
+      <span class="support-step-label" data-i18n="step3">Passaggio 3</span>
+      <p class="sms-selected-problem" data-sms-selected-problem></p>
+      <h2 id="sms-solution-title" data-i18n="solutionTitle">Prova questa soluzione.</h2>
+      <div class="sms-solution" data-sms-solution></div>
+      <p class="sms-question" data-i18n="resolvedQuestion">Il problema è stato risolto?</p>
+      <div class="sms-choice-row">
+        <button class="sms-choice" type="button" data-sms-resolved="yes" data-i18n="yesResolved">Sì, problema risolto</button>
+        <button class="sms-choice" type="button" data-sms-resolved="no" data-i18n="noResolved">No, il problema persiste</button>
+      </div>
+      <div class="sms-support-actions"><button class="button" type="button" data-sms-back="problem" data-i18n="backProblems">Torna ai problemi</button></div>
+    </section>
+
+    <section class="sms-support-panel" data-sms-step="report" aria-labelledby="sms-report-title" hidden>
+      <span class="support-step-label" data-i18n="step4">Passaggio 4</span>
+      <h2 id="sms-report-title" data-i18n="reportTitle">Scegli come registrare la segnalazione.</h2>
+      <p class="section-intro" data-i18n="reportIntro">La registrazione aiuta FZO a individuare problemi ricorrenti. Nessuna opzione consente allegati.</p>
+      <div class="sms-report-grid">
+        <button class="sms-report-option" type="button" data-sms-source="Anonima"><strong data-i18n="anonymousTitle">Anonima</strong><span data-i18n="anonymousCopy">Nessun indirizzo email; non riceverai una risposta personale.</span></button>
+        <button class="sms-report-option" type="button" data-sms-source="Richiesta di contatto"><strong data-i18n="contactTitle">Con richiesta di contatto</strong><span data-i18n="contactCopy">Puoi lasciare facoltativamente un’email per ricevere una risposta.</span></button>
+        <button class="sms-report-option" type="button" data-sms-source="Beta tester"><strong data-i18n="betaTitle">Beta tester</strong><span data-i18n="betaCopy">Usa questo percorso se il problema è emerso durante il programma di test.</span></button>
+      </div>
+      <div class="sms-support-actions"><button class="button" type="button" data-sms-back="solution" data-i18n="backSolution">Torna alla soluzione</button></div>
+    </section>
+
+    <section class="sms-support-panel" data-sms-step="submit" aria-labelledby="sms-submit-title" hidden>
+      <span class="support-step-label" data-i18n="step5">Passaggio 5</span>
+      <h2 id="sms-submit-title" data-i18n="submitTitle">Registra l’esito.</h2>
+      <dl class="sms-summary">
+        <div><dt data-i18n="summaryLanguage">Lingua</dt><dd data-summary="language"></dd></div>
+        <div><dt data-i18n="summaryCategory">Categoria</dt><dd data-summary="category"></dd></div>
+        <div><dt data-i18n="summaryProblem">Problema</dt><dd data-summary="problem"></dd></div>
+        <div><dt data-i18n="summaryOutcome">Esito</dt><dd data-summary="outcome"></dd></div>
+        <div><dt data-i18n="summaryType">Tipo</dt><dd data-summary="source"></dd></div>
+      </dl>
+      <div class="sms-data-note"><span data-i18n="formNote">Il modulo ripropone il percorso già seguito e permette di aggiungere soltanto le informazioni tecniche pertinenti. Il registro amministrativo non è pubblico.</span></div>
+      <div class="sms-support-actions">
+        <a class="button primary" data-sms-form-link href="#" target="_blank" rel="noopener" data-i18n="openForm">Apri il modulo di segnalazione</a>
+        <button class="button" type="button" data-sms-restart data-i18n="restart">Inizia un nuovo percorso</button>
+      </div>
+    </section>
+
+    <noscript><div class="notice">Per usare la guida ramificata è necessario attivare JavaScript. Puoi comunque contattare FZO all’indirizzo <a href="mailto:fzo.developer@gmail.com">fzo.developer@gmail.com</a>.</div></noscript>
   </main>
-  <footer class="site-footer"><p><strong>FZO</strong> — Assistenza SchoolMasterScan</p><p><a href="../../schoolmasterscan/">Hub SchoolMasterScan</a> · <a href="../">Assistenza</a></p></footer>
+  <footer class="site-footer"><p><strong>FZO</strong> — Assistenza SchoolMasterScan</p><p><a href="../../schoolmasterscan/">Hub SchoolMasterScan</a> · <a href="../">Assistenza</a> · <a href="mailto:fzo.developer@gmail.com">Contatti</a></p></footer>
 </body>
 </html>
