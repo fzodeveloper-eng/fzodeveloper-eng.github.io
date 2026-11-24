@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guida rapida a Family Deathmatch RR: modalità TAG e Rissa Reale, cambi, Second Wind, combattenti, arene e multiplayer.">
+  <meta name="description" content="Guida rapida a Family Deathmatch RR: modalità TAG e Rissa Reale, cambi, DUAL, Second Wind, combattenti, arene e multiplayer.">
   <title>Family Deathmatch RR — Guida del giocatore</title>
   <link rel="stylesheet" href="../../assets/styles.css">
 </head>
@@ -124,6 +124,11 @@
           </ul>
           <p>Durante l’animazione del cambio i comandi vengono temporaneamente sospesi. Energia, arma e stato dei due compagni restano separati.</p>
 
+          <h3>Evento DUAL</h3>
+          <p>Durante la fase TAG può attivarsi casualmente <strong>DUAL</strong> quando uno zoccolo lanciato manca il bersaglio e le due riserve sono ancora disponibili. Le riserve raccolgono e si rilanciano lo zoccolo, si avvicinano, si scambiano alcuni colpi e tornano infine ai lati dell’arena.</p>
+          <p>Lo zoccolo sottrae 15 punti energia alla riserva colpita, ma da solo non può mandarla KO: le lascia almeno 1 punto energia. DUAL è una breve sequenza speciale tra le riserve, non una seconda partita e non sostituisce i fighter attivi.</p>
+          <p class="guide-note">DUAL è un evento possibile, non garantito. Nel multiplayer viene deciso dall’Host; se il Guest compatibile non supporta l’evento, DUAL non viene attivato.</p>
+
           <h3>Dalla fase TAG alla Rissa Reale</h3>
           <p>Nel corso di un incontro TAG può attivarsi automaticamente una fase <strong>RISSA REALE!</strong>: le due riserve entrano e tutti i combattenti ancora disponibili partecipano insieme. Dopo un intervallo la partita può tornare alla configurazione TAG; se rimane un solo combattente per squadra, continua invece come Rissa Reale fino al risultato.</p>
         </section>
@@ -186,8 +191,8 @@
 
           <h3>Compatibilità con Family Deathmatch</h3>
           <ul>
-            <li>Una versione compatibile di Family Deathmatch può entrare come Guest in una sessione organizzata da FDM-RR, ricevendo temporaneamente combattenti, arena e stato dell’incontro.</li>
-            <li>FDM-RR può entrare come Guest in un normale incontro singolo organizzato da Family Deathmatch e partecipare alla modalità standard uno contro uno.</li>
+            <li><strong>Direzione supportata:</strong> FDM-RR organizza la sessione come Host e una versione compatibile di Family Deathmatch entra come Guest, ricevendo temporaneamente combattenti, arena e stato dell’incontro.</li>
+            <li><strong>Direzione non supportata:</strong> FDM organizza la sessione come Host e FDM-RR tenta di entrare come Guest. In questo caso FDM-RR chiude il collegamento prima della lobby e chiede di usare l’app Family Deathmatch sul dispositivo Guest; non viene creata una partita uno contro uno di ripiego.</li>
             <li>Le funzioni disponibili dipendono dalla compatibilità tra le versioni installate; se un comando non è supportato, la lobby impedisce di dichiararsi pronti.</li>
           </ul>
           <p class="guide-note">I contenuti ricevuti nel multiplayer sono usati soltanto nella sessione e non vengono importati automaticamente nella raccolta personale.</p>
