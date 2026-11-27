@@ -849,6 +849,14 @@ h3 { font-size: 1.35rem; }
 .sms-summary dt { color: var(--blue); font-weight: 900; }
 .sms-summary dd { margin: 0; color: var(--muted); }
 
+/* FDM support: keep the active step below the sticky site navigation. */
+body[data-fdm-app] .sms-support-panel { scroll-margin-top: 9rem; }
+body[data-fdm-app] .sms-support-hero h1,
+body[data-fdm-app] .sms-summary dd { overflow-wrap: anywhere; }
+body[data-fdm-app] [data-fdm-resolved][hidden] { display: none !important; }
+body[data-fdm-app] .sms-solution p:first-child { margin-top: 0; }
+body[data-fdm-app] .sms-solution p:last-child { margin-bottom: 0; }
+
 @media (max-width: 780px) {
   .sms-category-grid,
   .sms-choice-row,

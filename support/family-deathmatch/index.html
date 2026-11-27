@@ -3,22 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guida di assistenza Family Deathmatch in preparazione.">
-  <title>Assistenza Family Deathmatch — Work in progress</title>
-  <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/wip-vinyl.css">
-  <script src="../../assets/wip-vinyl.js" defer></script>
+  <meta name="description" content="Guida ramificata di assistenza e segnalazioni per Family Deathmatch.">
+  <title>Assistenza Family Deathmatch — FZO</title>
+  <link rel="stylesheet" href="../../assets/styles.css?v=20261127">
+  <script src="../../assets/support-fdm-catalog.js" defer></script>
+  <script src="../../assets/support-fdm.js?v=20261127" defer></script>
 </head>
-<body class="beta-page">
+<body data-fdm-app="FDM">
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
-  <header class="site-header"><nav class="nav" aria-label="Navigazione principale"><a class="brand" href="../../"><img class="brand-logo" src="../../assets/fzo-logo.png" alt="Logo ufficiale FZO"><span class="brand-name">FZO</span></a><div class="nav-links"><a href="../../">Home</a><a href="../">Assistenza</a><a href="./" aria-current="page">FDM</a></div></nav></header>
-  <main id="contenuto" class="page">
+  <header class="site-header"><nav class="nav" aria-label="Navigazione principale">
+    <a class="brand" href="../../"><img class="brand-logo" src="../../assets/fzo-logo.png" alt="Logo ufficiale FZO"><span class="brand-name">FZO</span></a>
+    <div class="nav-links"><a href="../../">Home</a><a href="../">Assistenza</a><a href="../../family-deathmatch/">FDM</a></div>
+  </nav></header>
+  <main id="contenuto" class="page sms-support-shell">
     <p class="support-breadcrumbs"><a href="../../">Home</a> → <a href="../">Assistenza e segnalazioni</a> → Family Deathmatch</p>
-    <section class="wip-shell" aria-labelledby="titolo-supporto-fdm">
-      <div class="wip-player" data-wip-player><div class="turntable"><div class="vinyl" data-vinyl aria-hidden="true"><img class="vinyl-label" src="../../assets/fzo-vinyl-label-640.jpg" alt=""><span class="spindle-hub"></span></div><div class="tonearm" data-tonearm aria-hidden="true"><span class="tonearm-head"></span><span class="tonearm-shaft"></span><span class="tonearm-pivot"></span></div><button class="player-button" type="button" data-player-button aria-pressed="false"><span data-player-icon aria-hidden="true">▶</span><span class="visually-hidden" data-player-text>Avvia disco e musica</span></button><p class="player-status" data-player-status aria-live="polite">Pronto · premi ▶ per avviare</p><audio data-player-audio preload="metadata" src="../../assets/fzo-beta-testers-loop.mp3"></audio></div></div>
-      <div class="wip-copy"><p class="eyebrow">Assistenza Family Deathmatch · Work in progress</p><h1 id="titolo-supporto-fdm">Guida ramificata</h1><p class="lead">La guida di risoluzione dei problemi di Family Deathmatch è in preparazione. In questa fase la pagina non raccoglie né trasmette dati.</p><p class="beta-status">Nessun modulo attivo</p><div class="actions"><a class="button" href="../">Torna alla scelta dell’app</a></div></div>
+    <header class="page-header sms-support-hero">
+      <p class="eyebrow">Assistenza FZO · Guida operativa · 49 percorsi</p>
+      <h1>Family Deathmatch</h1>
+      <p class="lead">Scegli il sintomo, prova la soluzione proposta e registra l'esito. Anche gli esiti positivi aiutano FZO a migliorare l'app e questa guida.</p>
+      <p><a href="../../family-deathmatch/guida/">Consulta anche la guida del giocatore</a>.</p>
+    </header>
+    <p class="notice" data-fdm-language>Guida disponibile in italiano.</p>
+    <div class="sms-data-note"><strong>Dati minimi.</strong> Non inviare fotografie, asset, file di backup, dati di pagamento, password o nomi personali. Il registro non è pubblico; l'email è facoltativa e va indicata solamente se chiedi un ricontatto. <a href="../../family-deathmatch/privacy/">Informativa privacy FDM</a> · <a href="mailto:fzo.developer@gmail.com">Contatti FZO</a>.</div>
+    <section class="sms-support-panel" data-fdm-step="category" aria-labelledby="fdm-category-title">
+      <span class="support-step-label">Passaggio 1</span><h2 id="fdm-category-title">Che cosa non funziona?</h2>
+      <p class="section-intro">Parti dal sintomo che osservi. Non è necessario conoscere la causa tecnica.</p>
+      <h3>Aree comuni FDM e FDM-RR</h3><div class="sms-category-grid" data-fdm-common></div>
+      <h3 style="margin-top:1.5rem">Aree specifiche FDM</h3><div class="sms-category-grid" data-fdm-specific></div>
     </section>
+    <section class="sms-support-panel" data-fdm-step="problem" aria-labelledby="fdm-problem-title" hidden>
+      <span class="support-step-label">Passaggio 2</span><h2 id="fdm-problem-title" data-fdm-problem-heading></h2>
+      <div class="sms-problem-list" data-fdm-problems></div>
+      <div class="sms-support-actions"><button class="button" type="button" data-fdm-back="category">Torna alle categorie</button></div>
+    </section>
+    <section class="sms-support-panel" data-fdm-step="solution" aria-labelledby="fdm-solution-title" hidden>
+      <span class="support-step-label">Passaggio 3</span><p class="sms-selected-problem" data-fdm-selected-problem></p>
+      <h2 id="fdm-solution-title">Prova questa soluzione.</h2><div class="sms-solution" data-fdm-solution></div>
+      <p class="sms-question" data-fdm-question>Il problema è stato risolto?</p>
+      <div class="sms-choice-row"><button class="sms-choice" type="button" data-fdm-resolved="yes">Sì, problema risolto</button><button class="sms-choice" type="button" data-fdm-resolved="no">No, il problema persiste</button></div>
+      <div class="sms-support-actions"><button class="button" type="button" data-fdm-back="problem">Torna ai problemi</button></div>
+    </section>
+    <section class="sms-support-panel" data-fdm-step="report" aria-labelledby="fdm-report-title" hidden>
+      <span class="support-step-label">Passaggio 4</span><h2 id="fdm-report-title">Scegli come registrare la segnalazione.</h2>
+      <p class="section-intro">Potrai inserire nel modulo soltanto i dettagli tecnici pertinenti. Nessuna opzione consente allegati.</p>
+      <div class="sms-data-note"><strong>Per questo percorso, se pertinenti:</strong> <span data-fdm-details></span></div>
+      <div class="sms-report-grid">
+        <button class="sms-report-option" type="button" data-fdm-source="Anonima"><strong>Anonima</strong><span>Nessun indirizzo email; non riceverai una risposta personale.</span></button>
+        <button class="sms-report-option" type="button" data-fdm-source="Richiesta di contatto"><strong>Con richiesta di contatto</strong><span>Puoi lasciare un'email per ricevere una risposta.</span></button>
+        <button class="sms-report-option" type="button" data-fdm-source="Beta tester"><strong>Beta tester</strong><span>Per i problemi emersi durante il programma di test.</span></button>
+      </div>
+      <div class="sms-support-actions"><button class="button" type="button" data-fdm-back="solution">Torna alla soluzione</button></div>
+    </section>
+    <section class="sms-support-panel" data-fdm-step="submit" aria-labelledby="fdm-submit-title" hidden>
+      <span class="support-step-label">Passaggio 5</span><h2 id="fdm-submit-title">Registra l'esito.</h2>
+      <dl class="sms-summary"><div><dt>App</dt><dd data-fdm-summary="app"></dd></div><div><dt>Ambito</dt><dd data-fdm-summary="scope"></dd></div><div><dt>Categoria</dt><dd data-fdm-summary="category"></dd></div><div><dt>Problema</dt><dd data-fdm-summary="problem"></dd></div><div><dt>Esito</dt><dd data-fdm-summary="outcome"></dd></div><div><dt>Tipo</dt><dd data-fdm-summary="source"></dd></div></dl>
+      <div class="sms-data-note" data-fdm-final-note>Il modulo ripropone il percorso già seguito. Per registrare l'esito occorre premere Invia nel modulo Google.</div>
+      <div class="sms-support-actions"><a class="button primary" data-fdm-form-link href="#" target="_blank" rel="noopener">Apri il modulo di segnalazione</a><button class="button" type="button" data-fdm-restart>Inizia un nuovo percorso</button></div>
+      <div class="sms-support-actions"><button class="button" type="button" data-fdm-back-submit>Torna indietro</button></div>
+    </section>
+    <noscript><div class="notice">Per utilizzare la guida ramificata attiva JavaScript. Puoi comunque contattare FZO all'indirizzo <a href="mailto:fzo.developer@gmail.com">fzo.developer@gmail.com</a>.</div></noscript>
   </main>
-  <footer class="site-footer"><p><strong>FZO</strong> — Assistenza Family Deathmatch</p><p><a href="../../family-deathmatch/">Hub FDM</a> · <a href="../">Assistenza</a></p></footer>
+  <footer class="site-footer"><p><strong>FZO</strong> — Assistenza Family Deathmatch</p><p><a href="../../family-deathmatch/">Hub FDM</a> · <a href="../">Assistenza</a> · <a href="mailto:fzo.developer@gmail.com">Contatti</a></p></footer>
 </body>
 </html>
